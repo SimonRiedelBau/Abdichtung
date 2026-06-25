@@ -3,194 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdichtungsassistent · DIN 18533</title>
+<title>Abdichtungsassistent · DIN 18531–18535</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Abdichtung">
+<meta name="theme-color" content="#161820">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAJH0lEQVR4nO3d3XNcdR3H8c/ZpCG10FILTdopTUBbW1I6iIo6U1qrJHojOozj1BsfLnrhDd4xvfKC4aKi4h/AOCPIhTN6IT7BDMNIxioD6gB16BNaEsQ0lJYnK7RNdo8Xy3bPZp/O75zf2T3nu+/XXdPsyS+bd7757dmzs4H6aOP4ZNjPr4/snF2cC/rxdXv2RYkXvYg80y9AxGgnq7gzOSghIy7fYXs9GCEjKV9hezkIIcOXtGGX0i6AmOFT2p5SBU3MyEKarhKNd0JGr7huQZwnNDGjl1x7c6o/q5iPPrB5Iovjovd237swn8Vx407q2EH7jJmAB4fPwONEHStoXzET8uDyFXa3qLsG7SNmQkaNj7A7RZ1p0ISMdtKE3Snojmc5iBlZSdNHpy7blt6vmPcdXs7kUTKyM3toOPHP2/ekbhl00piThEzA9iQJPGnYK6P2FrRrzIRsn2vYSaLuGnTWMRPy4HEJO23Uqa+2c0HMg6mXP/eGCZ3VdCZk1MSZ1mmmdKoJTcxwFaeHNGfJrgTtOp2JGUllEXWt38z20MSMTrLqI1HQ3X57iBlxdOskydajJHHRPmzYOD4ZOk9opjN88j2lve6hiRlJ+OzGKWiuoEM/uHTnbUIznZGGr35KPCCEJV4mNNMZPvjoKHbQ7J/RT3H76+nVdkDWCBqmpA6a/TN8StsTExqmEDRMIWiYQtAwhaBhCkHDFIKGKQQNUwgaphA0TCFomELQMIWgYQpBwxSChinDWR344QPLWR3a2bd+0f7bZJ3uOq2z3zKZ0Hm686X262GdyeRtPVHeg87rN7tyXawznbyuiz00TCFomELQMIWgYQpBwxSChikEDVMIGqYQNEwhaJhC0DCFoGEKQcMUgoYp3oPO68XfK9fFOtPJ67oymdB5+2bbrYd1JpO39URltrI8f9NRrNMW9tAwhaBhSqH+juXpdWwWXqFdlHW6KMyEztOdLxX/FdpFWaerQgSdtzu/pqiv0C7KOpMoRNBAXAQNUwgaphA0TCFomELQMIWgYQpBwxSChikEDVMIGqYQNEwhaJhC0DClEEHn9fV0RX2FdlHWmUQhgpby90Mo+iu0i7JOV/n6rrrI2w+hHdbZP4WZ0EAcBA1TeK9v1uksz1sV3us7R4q+zjzgvb5zpqjrzAv20DCFoGEKQcMUgoYpBA1TCBqmEDRMIWiYQtAwhaBhCkHDFIKGKQQNUwgapvBe3zlT1HXmBe/1nSNFX2ce8F7frNMU9tAwhaBhCkHDFIKGKQQNUwgaphA0TCFomELQMIWgYQpBwxSChikEDVMIGqYQNEwhaJjCVeMd3H/3kO7YHjR87JsPlTV/Pmz63K0bAv384FDTx0NJl5akcxdCnTgj/eFoRX+fi3f7ckVaKkv/vSgtvhPq5GKox/8R6p+vN98eVUzoNq4ZlT7zkaDp4zO7mj/WSSBpdJW0ZX2gO28O9OCBIX399nh3+1Cpetvrr5Fu2RLoa58s6affGdL3vzKk1SNOyxgYBN3G/h0lrWoeuJq+uaQ4Sf/mhYr2HV7W/h8s67uPlPXuxfr/Hdxb6hpk7fZferB6+ydfqk/lL+wM9JNvDGmEv69NCLqN6CReKtc/PrZOuuWG+FO6EkrHFkL98XjlysdGhqWJDfGO8f7l6u3v/21ZPztSP8bOTYEO7uPHtxL3SAvj6wLt2lIP7pd/rehS5E2fZqbcth2tXE7wJlIP/7mihbfrk/qrHy9p7WjqpZhC0C3MTAUN24onXwr13Ol6SJ9rsx1ppRRIOzYF2r+jfle/+maouXPuD+wqoTR7sn67kWHptsn0v1yWsAtrYToygRfeDnX6jVBHXq7oju3VimsPGP90qn2Ud91a0l23Ns+Lk4uh7nusokrCExXz5xr/vfXDgarnUiAxoZt8bDzQ1sj+tjYR//JyqHJ9C6uZqWR33Zb1gW6/KflUfX+pMd4PXZX4UCYxoVf44orTcrUp/O5F6cV/h7ptovr/n/1ooKtHpQsXmw4hqXqW4sdPVH8DxtZJ99w5pD3bAq25SvredEmvvRnquVfcJ+vqkcb1/e+S8yFMY0JHlALp8zvrd8n5C9Kx/9Sji24xVg1V99JxvP6O9KPHyw0f+3KL7UgcN17X+O9XWzzJM8iY0BGfujHQ+jX1f2+4Wnr6UPu7aGYq0O9eiHfst96TLi5VnyiRpM3Xuq+vFEh7I89cXl6Wnp8n6CgmdMTMLre7Y/cNgcbWxvvc9WvqMUvSe5edvpQk6dt7Stp0bT3oXz9faXjCBkzoK1aPSHu21WN56nio+x4rN33exIZAj3xwzUUgaXqqpEefqTR9XtTYWume6cbzfM+ejjdZR1dJN10f6O5PlBrOvhw/E+qh2c5fdxClDnr20PDEvsPL8z4W0097twcNE/TIqdaxzJ8P9dpbobasr8Y1PRXo0WeaP6/daTup+szfr/7WOcZOt3/qWKgfPlFO9ORM3s0eGp5Ic3sm9Aei242lcucJeuRUqAOfrgY9eV2gbWNBwzOJKy1XqlfMvfJGqKdPhPr9ixUtxxiulbC6T65dbXfiTPVqu3+dZd/cTrBxfDLWvXP0gc1tf3MsTGjkQ6cJvfveha6dxX4UFOdgQFbi9uflLEfafQ8g+emodHZxjqtbYIa389BMaaThqx+noNlHox9cuvP6TCFTGkn47MY56G6/LUQNF916cd0VlCSJB4aw4OziXJBoy8GUhg++p7OU4dV2RI1OsurjStCu2444vz1EjVbidOE6nWv9pprQRA1XWcQc1TSV416sFNXpwqUoLmIaXHEHW5KYo7uLnr5ihWk9mHr5c2+5b85yStcwre1zDTntdJY8Bi25Ry0RtkVJJnLSfXOsoKXkUUvJwq4h8OJJs6VI8wCw1Zm5jqfq+hU1BoPvmKUuDwrTPCXOlXnoJIuYpS4TWko3pWuY1qjxMehSBS35iVoi7EHm6y92t11D7C2Fr6glwh4kPreecbbATntkn1FHEbgdWT12ivt4zvlBX1ZRA+24nJxwfuqbFwOgl1x7SxUn0xpZSTo4U12cxLRGFtJ0lfpqO6KGT2l78hojWxAk5WswZjJdCRtx+f4Ln+l2gbDRTlZb1Z7tf4kbvXi89X+ZHXV2j2k4HwAAAABJRU5ErkJggg==">🧱%3C/text%3E%3Ctext x='90' y='155' font-size='18' text-anchor='middle' font-family=&quot;Segoe UI,system-ui&quot; font-weight='700' fill='%23e8a23a' letter-spacing='1'%3EABD%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="data:application/json,%7B%22name%22%3A%22Abdichtungsassistent%22%2C%22short_name%22%3A%22Abdichtung%22%2C%22start_url%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23161820%22%2C%22theme_color%22%3A%22%23e8a23a%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%2520viewBox%3D'0%25200%2520180%2520180'%253E%253Crect%2520width%3D'180'%2520height%3D'180'%2520rx%3D'40'%2520fill%3D'%2523161820'%2F%253E%253Ctext%2520x%3D'90'%2520y%3D'115'%2520font-size%3D'80'%2520text-anchor%3D'middle'%253E%25F0%259F%25A7%25B1%253C%2Ftext%253E%253C%2Fsvg%253E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D">
 <style>
 :root {
-  --bg: #161820;
-  --surface: #1e2029;
-  --surface2: #272a36;
-  --surface3: #2f3344;
-  --border: #383d52;
-  --accent: #e8a23a;
-  --accent2: #4a9ef0;
-  --ok: #3ac87a;
-  --danger: #e8503a;
-  --text: #eaecf4;
-  --text2: #b0b8cc;
-  --muted: #6a7490;
-  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --radius: 12px;
+  --bg:#161820;--surface:#1e2029;--surface2:#272a36;--surface3:#2f3344;
+  --border:#383d52;--accent:#e8a23a;--accent2:#4a9ef0;--ok:#3ac87a;
+  --danger:#e8503a;--text:#eaecf4;--text2:#b0b8cc;--muted:#6a7490;
+  --font:'Segoe UI',system-ui,-apple-system,sans-serif;--radius:12px;
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  background: var(--bg); color: var(--text); font-family: var(--font);
-  min-height: 100vh; display: flex; flex-direction: column; align-items: center;
-  padding: 20px 14px 60px;
-}
-header {
-  width: 100%; max-width: 680px;
-  display: flex; align-items: center; gap: 14px; margin-bottom: 28px;
-}
-.logo {
-  width: 44px; height: 44px;
-  background: linear-gradient(135deg, #c87c20, #e8a23a);
-  border-radius: 11px; display: grid; place-items: center;
-  font-size: 22px; flex-shrink: 0; box-shadow: 0 2px 10px rgba(232,162,58,0.25);
-}
-.header-text h1 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; }
-.header-text p  { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--font);
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:20px 14px 60px;}
+header{width:100%;max-width:700px;display:flex;align-items:center;gap:14px;margin-bottom:24px;}
+.logo{width:44px;height:44px;background:linear-gradient(135deg,#c87c20,#e8a23a);
+  border-radius:11px;display:grid;place-items:center;font-size:22px;flex-shrink:0;
+  box-shadow:0 2px 10px rgba(232,162,58,.25);}
+.header-text h1{font-size:1.15rem;font-weight:700;letter-spacing:-.01em;}
+.header-text p{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;}
 
-.progress-wrap { width: 100%; max-width: 680px; margin-bottom: 14px; }
-.progress-track { height: 3px; background: var(--surface2); border-radius: 2px; overflow: hidden; }
-.progress-fill  { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.35s cubic-bezier(.4,0,.2,1); }
-.progress-label { font-size: 0.7rem; color: var(--muted); margin-top: 6px; display: flex; justify-content: space-between; }
+/* norm pills */
+.norm-pills{width:100%;max-width:700px;display:flex;flex-wrap:wrap;gap:5px;margin-bottom:18px;}
+.npill{font-size:.65rem;font-weight:700;padding:3px 9px;border-radius:20px;
+  letter-spacing:.05em;border:1px solid;}
+.np-18531{background:rgba(58,200,122,.1);color:#4ed68a;border-color:rgba(58,200,122,.3);}
+.np-18532{background:rgba(232,162,58,.1);color:#f0b450;border-color:rgba(232,162,58,.3);}
+.np-18533{background:rgba(74,158,240,.1);color:#70b8ff;border-color:rgba(74,158,240,.3);}
+.np-18534{background:rgba(180,100,240,.1);color:#c080ff;border-color:rgba(180,100,240,.3);}
+.np-18535{background:rgba(232,80,58,.1);color:#f06050;border-color:rgba(232,80,58,.3);}
 
-.breadcrumb { width: 100%; max-width: 680px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-bottom: 16px; min-height: 26px; }
-.crumb { font-size: 0.72rem; color: var(--muted); background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 2px 9px; white-space: nowrap; }
-.crumb-arrow { color: var(--border); font-size: 0.7rem; }
+.progress-wrap{width:100%;max-width:700px;margin-bottom:14px;}
+.progress-track{height:3px;background:var(--surface2);border-radius:2px;overflow:hidden;}
+.progress-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .35s cubic-bezier(.4,0,.2,1);}
+.progress-label{font-size:.7rem;color:var(--muted);margin-top:6px;display:flex;justify-content:space-between;}
 
-.card { width: 100%; max-width: 680px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 24px 22px; animation: slideUp 0.22s ease; }
-@keyframes slideUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+.breadcrumb{width:100%;max-width:700px;display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-bottom:16px;min-height:26px;}
+.crumb{font-size:.72rem;color:var(--muted);background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:2px 9px;white-space:nowrap;}
+.crumb-arrow{color:var(--border);font-size:.7rem;}
 
-.step-chip { display: inline-flex; align-items: center; gap: 5px; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px; }
-.step-dot  { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
-.question  { font-size: 1.1rem; font-weight: 600; line-height: 1.45; margin-bottom: 6px; }
-.hint      { font-size: 0.82rem; color: var(--text2); line-height: 1.55; margin-bottom: 20px; }
+.card{width:100%;max-width:700px;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);padding:26px 24px 22px;animation:slideUp .22s ease;}
+@keyframes slideUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.step-chip{display:inline-flex;align-items:center;gap:5px;font-size:.68rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:12px;}
+.step-dot{width:6px;height:6px;background:var(--accent);border-radius:50%;}
+.question{font-size:1.1rem;font-weight:600;line-height:1.45;margin-bottom:6px;}
+.hint{font-size:.82rem;color:var(--text2);line-height:1.55;margin-bottom:20px;}
 
-.options { display: flex; flex-direction: column; gap: 8px; }
-.opt-btn {
-  background: var(--surface2); border: 1.5px solid var(--border); border-radius: 10px;
-  padding: 13px 16px; cursor: pointer; text-align: left; color: var(--text);
-  font-family: var(--font); font-size: 0.9rem;
-  transition: border-color 0.15s, background 0.15s, transform 0.12s;
-  display: flex; align-items: center; gap: 13px; width: 100%;
-}
-.opt-btn:hover { border-color: var(--accent); background: var(--surface3); transform: translateX(3px); }
-.opt-icon  { font-size: 1.2rem; width: 30px; text-align: center; flex-shrink: 0; }
-.opt-label { font-weight: 600; font-size: 0.9rem; display: block; }
-.opt-desc  { font-size: 0.76rem; color: var(--muted); display: block; margin-top: 2px; line-height: 1.4; }
+.options{display:flex;flex-direction:column;gap:8px;}
+.opt-btn{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;
+  padding:13px 16px;cursor:pointer;text-align:left;color:var(--text);font-family:var(--font);
+  font-size:.9rem;transition:border-color .15s,background .15s,transform .12s;
+  display:flex;align-items:center;gap:13px;width:100%;}
+.opt-btn:hover{border-color:var(--accent);background:var(--surface3);transform:translateX(3px);}
+.opt-icon{font-size:1.2rem;width:30px;text-align:center;flex-shrink:0;}
+.opt-label{font-weight:600;font-size:.9rem;display:block;}
+.opt-desc{font-size:.76rem;color:var(--muted);display:block;margin-top:2px;line-height:1.4;}
+.opt-norm{font-size:.65rem;font-weight:700;margin-top:4px;display:inline-block;
+  padding:1px 7px;border-radius:10px;letter-spacing:.04em;}
 
-.back-row { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); }
-.back-btn { background: none; border: 1px solid var(--border); border-radius: 8px; padding: 7px 14px; color: var(--muted); font-family: var(--font); font-size: 0.8rem; cursor: pointer; transition: color 0.15s, border-color 0.15s; }
-.back-btn:hover { color: var(--text); border-color: var(--text2); }
+.back-row{margin-top:18px;padding-top:16px;border-top:1px solid var(--border);}
+.back-btn{background:none;border:1px solid var(--border);border-radius:8px;padding:7px 14px;
+  color:var(--muted);font-family:var(--font);font-size:.8rem;cursor:pointer;transition:color .15s,border-color .15s;}
+.back-btn:hover{color:var(--text);border-color:var(--text2);}
 
-/* ── Result layout ── */
-.result-wrap { width: 100%; max-width: 680px; display: flex; flex-direction: column; gap: 12px; animation: slideUp 0.25s ease; }
-.result-hero { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px 20px; }
+/* result */
+.result-wrap{width:100%;max-width:700px;display:flex;flex-direction:column;gap:12px;animation:slideUp .25s ease;}
+.result-hero{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px 24px 20px;}
+.badge{display:inline-block;padding:3px 11px;border-radius:20px;font-size:.7rem;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;margin-bottom:10px;}
+.badge-low {background:rgba(58,200,122,.12);color:#4ed68a;border:1px solid rgba(58,200,122,.28);}
+.badge-mid {background:rgba(232,162,58,.12);color:#f0b450;border:1px solid rgba(232,162,58,.28);}
+.badge-high{background:rgba(232,80,58,.12); color:#f06050;border:1px solid rgba(232,80,58,.28);}
+.result-title{font-size:1.2rem;font-weight:700;line-height:1.35;}
+.result-subtitle{font-size:.82rem;color:var(--text2);margin-top:5px;line-height:1.5;}
 
-.badge { display: inline-block; padding: 3px 11px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 10px; }
-.badge-low  { background: rgba(58,200,122,0.12); color: #4ed68a; border: 1px solid rgba(58,200,122,0.28); }
-.badge-mid  { background: rgba(232,162,58,0.12); color: #f0b450; border: 1px solid rgba(232,162,58,0.28); }
-.badge-high { background: rgba(232,80,58,0.12);  color: #f06050; border: 1px solid rgba(232,80,58,0.28); }
+.warn-list{display:flex;flex-direction:column;gap:8px;}
+.warn-box{display:flex;gap:10px;align-items:flex-start;background:rgba(232,80,58,.08);
+  border:1px solid rgba(232,80,58,.22);border-radius:9px;padding:11px 14px;font-size:.83rem;color:#f0a090;line-height:1.5;}
 
-.result-title    { font-size: 1.2rem; font-weight: 700; line-height: 1.35; }
-.result-subtitle { font-size: 0.82rem; color: var(--text2); margin-top: 5px; line-height: 1.5; }
+.section-block{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.section-head{padding:12px 18px;border-bottom:1px solid var(--border);font-size:.68rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:var(--surface2);}
+.section-body{padding:14px 18px;display:flex;flex-direction:column;gap:8px;}
 
-.warn-list { display: flex; flex-direction: column; gap: 8px; }
-.warn-box  { display: flex; gap: 10px; align-items: flex-start; background: rgba(232,80,58,0.08); border: 1px solid rgba(232,80,58,0.22); border-radius: 9px; padding: 11px 14px; font-size: 0.83rem; color: #f0a090; line-height: 1.5; }
+.sys-item{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;
+  background:var(--surface2);border-radius:9px;border-left:3px solid var(--border);}
+.sys-item.prim{border-left-color:var(--ok);}
+.sys-item.alt {border-left-color:var(--accent2);}
+.sys-tag{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+  padding:2px 7px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:2px;}
+.sys-item.prim .sys-tag{background:rgba(58,200,122,.14);color:#4ed68a;}
+.sys-item.alt  .sys-tag{background:rgba(74,158,240,.14);color:#70b8ff;}
+.sys-name{font-weight:600;font-size:.88rem;}
+.sys-note{font-size:.76rem;color:var(--muted);margin-top:2px;line-height:1.4;}
 
-.section-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
-.section-head  { padding: 12px 18px; border-bottom: 1px solid var(--border); font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); background: var(--surface2); }
-.section-body  { padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; }
+.check-list{display:flex;flex-direction:column;gap:7px;}
+.check-item{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:var(--text2);line-height:1.45;}
+.check-box{width:16px;height:16px;border:1.5px solid var(--border);border-radius:4px;flex-shrink:0;
+  margin-top:2px;background:var(--surface3);cursor:pointer;transition:background .15s;display:grid;place-items:center;}
+.check-box.checked{background:var(--ok);border-color:var(--ok);}
+.check-box.checked::after{content:"✓";color:#0a2018;font-size:10px;font-weight:900;}
+.check-label{cursor:pointer;}
+.check-label.checked{color:var(--muted);text-decoration:line-through;}
+.norm-row{display:flex;align-items:center;gap:8px;font-size:.74rem;color:var(--muted);
+  padding:10px 18px;border-top:1px solid var(--border);background:var(--surface2);}
 
-.sys-item { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; background: var(--surface2); border-radius: 9px; border-left: 3px solid var(--border); }
-.sys-item.prim { border-left-color: var(--ok); }
-.sys-item.alt  { border-left-color: var(--accent2); }
-.sys-tag  { font-size: 0.64rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 7px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
-.sys-item.prim .sys-tag { background: rgba(58,200,122,0.14); color: #4ed68a; }
-.sys-item.alt  .sys-tag { background: rgba(74,158,240,0.14); color: #70b8ff; }
-.sys-name { font-weight: 600; font-size: 0.88rem; }
-.sys-note { font-size: 0.76rem; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+/* StLB */
+.stlb-block{background:var(--surface);border:1px solid rgba(74,158,240,.35);border-radius:var(--radius);overflow:hidden;}
+.stlb-head{padding:12px 18px;border-bottom:1px solid rgba(74,158,240,.2);font-size:.68rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;color:#70b8ff;background:rgba(74,158,240,.07);
+  display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;}
+.stlb-badge{background:rgba(74,158,240,.18);color:#70b8ff;border:1px solid rgba(74,158,240,.3);
+  border-radius:20px;font-size:.66rem;font-weight:700;padding:2px 8px;letter-spacing:.05em;}
+.stlb-toggle{font-size:.75rem;color:var(--muted);}
+.stlb-pos{border-bottom:1px solid var(--border);}
+.stlb-pos:last-child{border-bottom:none;}
+.stlb-pos-head{display:flex;align-items:flex-start;gap:12px;padding:13px 18px;cursor:pointer;transition:background .15s;}
+.stlb-pos-head:hover{background:var(--surface2);}
+.stlb-nr{font-size:.7rem;font-weight:700;color:var(--accent2);background:rgba(74,158,240,.1);
+  border-radius:5px;padding:2px 7px;white-space:nowrap;flex-shrink:0;margin-top:1px;font-family:'Courier New',monospace;}
+.stlb-kurz{font-weight:600;font-size:.88rem;flex:1;line-height:1.4;}
+.stlb-arrow{color:var(--muted);font-size:.75rem;flex-shrink:0;margin-top:3px;transition:transform .2s;}
+.stlb-arrow.open{transform:rotate(90deg);}
+.stlb-detail{display:none;padding:0 18px 16px;border-top:1px dashed var(--border);background:rgba(74,158,240,.03);}
+.stlb-detail.open{display:block;}
+.stlb-langtext{font-size:.78rem;color:var(--text2);line-height:1.65;white-space:pre-wrap;margin-top:12px;
+  font-family:'Courier New',monospace;background:var(--surface2);border-radius:8px;
+  padding:12px 14px;border:1px solid var(--border);}
+.copy-btn{margin-top:10px;background:none;border:1px solid rgba(74,158,240,.3);border-radius:7px;
+  padding:6px 12px;color:#70b8ff;font-family:var(--font);font-size:.76rem;cursor:pointer;transition:background .15s;
+  display:inline-flex;align-items:center;gap:6px;}
+.copy-btn:hover{background:rgba(74,158,240,.1);}
+.copy-btn.copied{color:var(--ok);border-color:rgba(58,200,122,.3);}
 
-.check-list  { display: flex; flex-direction: column; gap: 7px; }
-.check-item  { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; color: var(--text2); line-height: 1.45; }
-.check-box   { width: 16px; height: 16px; border: 1.5px solid var(--border); border-radius: 4px; flex-shrink: 0; margin-top: 2px; background: var(--surface3); cursor: pointer; transition: background 0.15s; display: grid; place-items: center; }
-.check-box.checked { background: var(--ok); border-color: var(--ok); }
-.check-box.checked::after { content: "✓"; color: #0a2018; font-size: 10px; font-weight: 900; }
-.check-label         { cursor: pointer; }
-.check-label.checked { color: var(--muted); text-decoration: line-through; }
+.result-footer{display:flex;gap:10px;flex-wrap:wrap;}
+.action-btn{background:none;border:1px solid var(--border);border-radius:9px;padding:9px 16px;
+  color:var(--text2);font-family:var(--font);font-size:.82rem;cursor:pointer;transition:all .15s;}
+.action-btn:hover{color:var(--text);border-color:var(--text2);}
+.action-btn.primary-btn{background:var(--accent);border-color:var(--accent);color:#1a0f00;font-weight:700;}
+.action-btn.primary-btn:hover{background:#f0b050;}
 
-.norm-row { display: flex; align-items: center; gap: 8px; font-size: 0.74rem; color: var(--muted); padding: 10px 18px; border-top: 1px solid var(--border); background: var(--surface2); }
-
-/* ── StLB Ausschreibung ── */
-.stlb-block { background: var(--surface); border: 1px solid rgba(74,158,240,0.35); border-radius: var(--radius); overflow: hidden; }
-.stlb-head  {
-  padding: 12px 18px; border-bottom: 1px solid rgba(74,158,240,0.2);
-  font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
-  color: #70b8ff; background: rgba(74,158,240,0.07);
-  display: flex; align-items: center; justify-content: space-between; cursor: pointer;
-  user-select: none;
-}
-.stlb-head-left { display: flex; align-items: center; gap: 8px; }
-.stlb-badge { background: rgba(74,158,240,0.18); color: #70b8ff; border: 1px solid rgba(74,158,240,0.3); border-radius: 20px; font-size: 0.66rem; font-weight: 700; padding: 2px 8px; letter-spacing: 0.05em; }
-.stlb-toggle { font-size: 0.75rem; color: var(--muted); transition: transform 0.2s; }
-.stlb-toggle.open { transform: rotate(180deg); }
-.stlb-body  { padding: 0; }
-
-.stlb-pos {
-  border-bottom: 1px solid var(--border);
-  overflow: hidden;
-}
-.stlb-pos:last-child { border-bottom: none; }
-
-.stlb-pos-head {
-  display: flex; align-items: flex-start; gap: 12px;
-  padding: 13px 18px; cursor: pointer;
-  transition: background 0.15s;
-}
-.stlb-pos-head:hover { background: var(--surface2); }
-
-.stlb-nr {
-  font-size: 0.7rem; font-weight: 700; color: var(--accent2);
-  background: rgba(74,158,240,0.1); border-radius: 5px;
-  padding: 2px 7px; white-space: nowrap; flex-shrink: 0; margin-top: 1px;
-  font-family: 'Courier New', monospace;
-}
-.stlb-kurz { font-weight: 600; font-size: 0.88rem; flex: 1; line-height: 1.4; }
-.stlb-arrow { color: var(--muted); font-size: 0.75rem; flex-shrink: 0; margin-top: 3px; transition: transform 0.2s; }
-.stlb-arrow.open { transform: rotate(90deg); }
-
-.stlb-detail {
-  display: none;
-  padding: 0 18px 16px 18px;
-  border-top: 1px dashed var(--border);
-  background: rgba(74,158,240,0.03);
-}
-.stlb-detail.open { display: block; }
-
-.stlb-langtext {
-  font-size: 0.82rem; color: var(--text2); line-height: 1.65;
-  white-space: pre-wrap; margin-top: 12px;
-  font-family: 'Courier New', monospace;
-  background: var(--surface2); border-radius: 8px;
-  padding: 12px 14px; border: 1px solid var(--border);
-}
-
-.copy-btn {
-  margin-top: 10px; background: none; border: 1px solid rgba(74,158,240,0.3);
-  border-radius: 7px; padding: 6px 12px; color: #70b8ff;
-  font-family: var(--font); font-size: 0.76rem; cursor: pointer;
-  transition: background 0.15s;
-  display: inline-flex; align-items: center; gap: 6px;
-}
-.copy-btn:hover { background: rgba(74,158,240,0.1); }
-.copy-btn.copied { color: var(--ok); border-color: rgba(58,200,122,0.3); }
-
-.stlb-hidden { display: none; }
-
-/* ── Footer buttons ── */
-.result-footer { display: flex; gap: 10px; flex-wrap: wrap; }
-.action-btn { background: none; border: 1px solid var(--border); border-radius: 9px; padding: 9px 16px; color: var(--text2); font-family: var(--font); font-size: 0.82rem; cursor: pointer; transition: all 0.15s; }
-.action-btn:hover { color: var(--text); border-color: var(--text2); }
-.action-btn.primary-btn { background: var(--accent); border-color: var(--accent); color: #1a0f00; font-weight: 700; }
-.action-btn.primary-btn:hover { background: #f0b050; }
-
-@media (max-width: 480px) {
-  body { padding: 14px 10px 50px; }
-  .card, .result-hero { padding: 20px 16px 18px; }
-  .section-body { padding: 12px 14px; }
-  .question { font-size: 1rem; }
-  .stlb-langtext { font-size: 0.76rem; }
+@media(max-width:480px){
+  body{padding:14px 10px 50px;}
+  .card,.result-hero{padding:20px 16px 18px;}
+  .section-body{padding:12px 14px;}
+  .question{font-size:1rem;}
+  .stlb-langtext{font-size:.72rem;}
 }
 </style>
 </head>
@@ -200,9 +164,17 @@ header {
   <div class="logo">🧱</div>
   <div class="header-text">
     <h1>Abdichtungsassistent</h1>
-    <p>DIN 18533 · StLB-Bau Ausschreibung</p>
+    <p>DIN 18531 · 18532 · 18533 · 18534 · 18535</p>
   </div>
 </header>
+
+<div class="norm-pills">
+  <span class="npill np-18531">DIN 18531 Flachdach</span>
+  <span class="npill np-18532">DIN 18532 Befahren</span>
+  <span class="npill np-18533">DIN 18533 Erdberührt</span>
+  <span class="npill np-18534">DIN 18534 Innenraum</span>
+  <span class="npill np-18535">DIN 18535 Behälter</span>
+</div>
 
 <div class="progress-wrap">
   <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
@@ -212,956 +184,935 @@ header {
 <div id="app"></div>
 
 <script>
-var navStack    = [];
-var answers     = {};
-var currentStep = "bauteil";
+var navStack=[], answers={}, currentStep="start";
 
-// ─── Entscheidungsbaum ────────────────────────────────────────────────────────
-var TREE = {
-  bauteil: {
-    step:"Schritt 1 · Bauteil", progress:20,
+// ═══════════════════════════════════════════════════════════════════════════════
+// DECISION TREE
+// ═══════════════════════════════════════════════════════════════════════════════
+var TREE={
+
+  // ── STARTPUNKT ──────────────────────────────────────────────────────────────
+  start:{
+    step:"Schritt 1 · Bereich",progress:10,
+    question:"In welchem Bereich soll abgedichtet werden?",
+    hint:"Die Normreihe richtet sich nach dem Baubereich.",
+    options:[
+      {icon:"🏠",label:"Flachdach / Dachfläche",          desc:"Nicht befahrene Dachflächen, Balkone, Terrassen (unbegangen)",norm:"np-18531",normtxt:"DIN 18531",key:"bereich",ans:"dach",     next:"dach_typ"},
+      {icon:"🚗",label:"Befahrene Fläche / Parkdeck",      desc:"TG-Decken, Parkdächer, Hofkellerdecken, Rampen",             norm:"np-18532",normtxt:"DIN 18532",key:"bereich",ans:"fahren",   next:"fahr_bauteil"},
+      {icon:"🧱",label:"Erdberührtes Bauteil / Keller",    desc:"Kellerwände, Bodenplatten, Sockel, Durchdringungen",         norm:"np-18533",normtxt:"DIN 18533",key:"bereich",ans:"erde",     next:"erd_bauteil"},
+      {icon:"🚿",label:"Innenraum / Nassbereich",           desc:"Bäder, Duschen, Küchen, Schwimmbäder, Labore",              norm:"np-18534",normtxt:"DIN 18534",key:"bereich",ans:"innen",    next:"innen_typ"},
+      {icon:"💧",label:"Behälter / Wasserbauwerk",          desc:"Trinkwasserbehälter, Kläranlagen, Becken, Silos",           norm:"np-18535",normtxt:"DIN 18535",key:"bereich",ans:"behaelter",next:"behaelter_typ"},
+    ]
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // DIN 18531 – FLACHDACH
+  // ══════════════════════════════════════════════════════════════════════════
+  dach_typ:{
+    step:"DIN 18531 · Dachtyp",progress:25,
+    question:"Welcher Dachtyp liegt vor?",
+    hint:"Bestimmt Norm-Teil und Systemwahl nach DIN 18531-1 bis -5.",
+    options:[
+      {icon:"⬜",label:"Warmdach (Einschalig, nicht begehbar)",  desc:"Einfaches Flachdach, keine Nutzung",          key:"dachtyp",ans:"warm_nb",  next:"dach_system"},
+      {icon:"🚶",label:"Dach mit Begehung (Terrasse)",           desc:"Begangene Dachfläche, Plattenbelag",          key:"dachtyp",ans:"begeh",    next:"dach_system"},
+      {icon:"🌿",label:"Dach mit Begrünung",                     desc:"Extensiv- oder Intensivbegrünung",            key:"dachtyp",ans:"gruen",    next:"dach_system"},
+      {icon:"🔵",label:"Umkehrdach",                             desc:"Dämmung auf der Abdichtung",                  key:"dachtyp",ans:"umkehr",   next:"dach_system"},
+      {icon:"🏊",label:"Dach mit wasserführender Schicht",       desc:"Beflutetes Dach, Gründach intensiv mit Wasser",key:"dachtyp",ans:"wasser",  next:"dach_system"},
+    ]
+  },
+  dach_system:{
+    step:"DIN 18531 · Systemwahl",progress:50,
+    question:"Welches Abdichtungssystem ist vorgesehen?",
+    hint:"DIN 18531-2 bis -5 regeln die einzelnen Systemtypen.",
+    options:[
+      {icon:"🟫",label:"Bitumenbahnen (DIN 18531-2)",            desc:"Polymerbitumen-Schweißbahnen, bewährt und robust",       key:"dachsys",ans:"bitumen",  next:"result"},
+      {icon:"🟦",label:"Kunststoff- / Elastomerbahnen (DIN 18531-3)", desc:"PVC-P, FPO, EPDM – nahtgeschweißt",                key:"dachsys",ans:"kunst",    next:"result"},
+      {icon:"🟨",label:"Flüssigabdichtung FLK (DIN 18531-4)",   desc:"PMMA, PU – nahtlos, Detailanschlüsse",                  key:"dachsys",ans:"fluessig", next:"result"},
+      {icon:"⬛",label:"Metallbahnen (DIN 18531-5)",             desc:"Blei, Kupfer, Edelstahl – Sonderbauten",                key:"dachsys",ans:"metall",   next:"result"},
+    ]
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // DIN 18532 – BEFAHRENE FLÄCHEN
+  // ══════════════════════════════════════════════════════════════════════════
+  fahr_bauteil:{
+    step:"DIN 18532 · Bauteil / Lage",progress:25,
+    question:"Um welches Bauteil handelt es sich?",
+    options:[
+      {icon:"🏗",label:"TG-Decke / Hofkellerdecke",              desc:"Betondecke unter PKW-/LKW-Befahrung",                   key:"fahrbaut",ans:"tgdecke",  next:"fahr_nutzung"},
+      {icon:"🔄",label:"Rampe / Spindel",                        desc:"Kurvenreiche Zufahrt, komplexe Geometrie",              key:"fahrbaut",ans:"rampe",    next:"fahr_nutzung"},
+      {icon:"🏢",label:"Parkdach (Dachgeschoss)",                 desc:"Oberstes Parkdeck, Witterungsexposition",               key:"fahrbaut",ans:"parkdach", next:"fahr_nutzung"},
+      {icon:"🌉",label:"Brücke / Brückenbelag",                  desc:"Straßen- oder Fußgängerbrücke",                         key:"fahrbaut",ans:"bruecke",  next:"fahr_nutzung"},
+    ]
+  },
+  fahr_nutzung:{
+    step:"DIN 18532 · Nutzungsklasse",progress:45,
+    question:"Welche Nutzungsklasse liegt vor?",
+    hint:"Bestimmt die Mindestanforderungen an das Abdichtungssystem.",
+    options:[
+      {icon:"🚶",label:"N1-V – Fußgänger / gelegentlich PKW",   desc:"Leichte Nutzung, Fußwege, Zufahrten selten",            key:"nutzklasse",ans:"N1",next:"fahr_geo"},
+      {icon:"🚗",label:"N2-V – PKW-Verkehr (normal)",            desc:"Regelmäßige PKW-Befahrung, Parkdecks",                  key:"nutzklasse",ans:"N2",next:"fahr_geo"},
+      {icon:"🚛",label:"N3-V – LKW / Schwerlast",               desc:"LKW, Feuerwehr, Schwerlastverkehr",                     key:"nutzklasse",ans:"N3",next:"fahr_geo"},
+    ]
+  },
+  fahr_geo:{
+    step:"DIN 18532 · Geometrie",progress:62,
+    question:"Welche Randbedingungen liegen vor?",
+    options:[
+      {icon:"📐",label:"Komplexe Geometrie / viele Durchdringungen", desc:"Rampen, Spindeln, viele Abläufe",                   key:"fahrgeo",ans:"komplex",  next:"fahr_system"},
+      {icon:"📏",label:"Geringe Aufbauhöhe",                     desc:"Wenig Platz für Systemaufbau",                          key:"fahrgeo",ans:"flach",    next:"fahr_system"},
+      {icon:"🔲",label:"Standard-Fläche, einfache Geometrie",    desc:"Regelmäßige Parkfläche, wenige Anschlüsse",             key:"fahrgeo",ans:"standard", next:"fahr_system"},
+    ]
+  },
+  fahr_system:{
+    step:"DIN 18532 · Systemwahl",progress:80,
+    question:"Welches Abdichtungssystem ist bevorzugt?",
+    hint:"Alle drei sind nach DIN 18532 für befahrene Flächen zugelassen.",
+    options:[
+      {icon:"🟦",label:"Kunststoff-/Elastomerbahn (DIN 18532-4)", desc:"ECB, PVC-P, PIB, EPDM, FPO – 1 Lage",                key:"sys18532",ans:"18532-4",next:"result"},
+      {icon:"🟫",label:"Bitumen + Kunststoffbahn (DIN 18532-5)",  desc:"Verbundsystem: Polymerbitumenbahn + Kunststoffbahn",   key:"sys18532",ans:"18532-5",next:"result"},
+      {icon:"🟨",label:"Flüssigkunststoff FLK (DIN 18532-6)",     desc:"OS 10 / OS 11a / OS 11b – nahtlos",                   key:"sys18532",ans:"18532-6",next:"result"},
+    ]
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // DIN 18533 – ERDBERÜHRT
+  // ══════════════════════════════════════════════════════════════════════════
+  erd_bauteil:{
+    step:"DIN 18533 · Bauteil",progress:25,
     question:"Was soll abgedichtet werden?",
-    hint:"Wähle das betroffene Bauteil oder den Anschlusstyp.",
     options:[
-      {icon:"🧱",label:"Wand (erdberührt, außen)",     desc:"Kellerw., UG-Außenwand gegen Erdreich",           key:"bauteil",ans:"wand",          next:"wasser"},
-      {icon:"⬜",label:"Bodenplatte / Sohle",           desc:"Unterste Betonplatte, ggf. druckbelastet",        key:"bauteil",ans:"sohle",         next:"wasser"},
-      {icon:"🏗",label:"TG-Decke / Außendecke",         desc:"Tiefgaragendecke, Flachdach, Parkdeck",           key:"bauteil",ans:"tg",            next:"tg_nutzung"},
-      {icon:"📐",label:"Sockel / Spritzwasserzone",     desc:"Übergang Wand zu Gelände, bis 30 cm ü. GOK",      key:"bauteil",ans:"sockel",        next:"sockel_typ"},
-      {icon:"🔩",label:"Durchdringung / Anschluss",     desc:"Rohr, Fenster/Tür, Wand-Boden-Übergang",         key:"bauteil",ans:"durchdringung", next:"dg_typ"},
+      {icon:"🧱",label:"Wand (erdberührt, außen)",               desc:"Kellerw., UG-Außenwand gegen Erdreich",                 key:"erdbaut",ans:"wand",          next:"erd_wasser"},
+      {icon:"⬜",label:"Bodenplatte / Sohle",                     desc:"Unterste Betonplatte, ggf. druckbelastet",              key:"erdbaut",ans:"sohle",         next:"erd_wasser"},
+      {icon:"📐",label:"Sockel / Spritzwasserzone",               desc:"Übergang Wand zu Gelände, bis 30 cm ü. GOK",           key:"erdbaut",ans:"sockel",        next:"sockel_typ"},
+      {icon:"🔩",label:"Durchdringung / Anschluss",               desc:"Rohr, Fenster/Tür, Wand-Boden-Übergang",               key:"erdbaut",ans:"durchdringung", next:"dg_typ"},
     ]
   },
-  wasser: {
-    step:"Schritt 2 · Wassereinwirkung", progress:50,
+  erd_wasser:{
+    step:"DIN 18533 · Wassereinwirkung",progress:50,
     question:"Welche Wassereinwirkungsklasse liegt vor?",
-    hint:"Entnimm das Baugrundgutachten oder die GW-Karte. Unsicher? → letzte Option.",
+    hint:"Entnimm das Baugrundgutachten. Unsicher? → letzte Option.",
     options:[
-      {icon:"💧",label:"W1.1-E – Bodenfeuchte",                   desc:"Kapillarwasser, kein Druckwasser; durchlässiger Boden",          key:"wasser",ans:"W1.1-E",next:"result"},
-      {icon:"💧",label:"W1.2-E – Nicht stauendes Sickerwasser",   desc:"Zeitweise Wasseransammlung, kein Dauerdruck",                    key:"wasser",ans:"W1.2-E",next:"result"},
-      {icon:"🌊",label:"W2.1-E – Drückendes Wasser ≤ 3 m",        desc:"Grundwasser/Stauspiegel, Druckhöhe bis 3 m",                    key:"wasser",ans:"W2.1-E",next:"result"},
-      {icon:"🌊",label:"W2.2-E – Drückendes Wasser > 3 m",        desc:"Hoher Grundwasserdruck, Druckhöhe über 3 m",                    key:"wasser",ans:"W2.2-E",next:"result"},
-      {icon:"❓",label:"Ich weiß es nicht – Leitfragen",          desc:"Anhand von 2 Fragen wird die Klasse ermittelt",                  key:"wasser",ans:null,    next:"leitfrage1"},
+      {icon:"💧",label:"W1.1-E – Bodenfeuchte",                  desc:"Kapillarwasser, kein Druckwasser",                      key:"wasser",ans:"W1.1-E",next:"result"},
+      {icon:"💧",label:"W1.2-E – Nicht stauendes Sickerwasser",  desc:"Zeitweise Wasseransammlung, kein Dauerdruck",           key:"wasser",ans:"W1.2-E",next:"result"},
+      {icon:"🌊",label:"W2.1-E – Drückendes Wasser ≤ 3 m",       desc:"Grundwasser, Druckhöhe bis 3 m",                       key:"wasser",ans:"W2.1-E",next:"result"},
+      {icon:"🌊",label:"W2.2-E – Drückendes Wasser > 3 m",       desc:"Hoher Grundwasserdruck > 3 m",                         key:"wasser",ans:"W2.2-E",next:"result"},
+      {icon:"❓",label:"Ich weiß es nicht – Leitfragen",         desc:"2 Fragen ermitteln die Klasse",                         key:"wasser",ans:null,    next:"leitfrage1"},
     ]
   },
-  leitfrage1: {
-    step:"Schritt 2b · Leitfrage", progress:55,
+  leitfrage1:{
+    step:"DIN 18533 · Leitfrage",progress:55,
     question:"Ist Grundwasser bekannt oder war Wasser im Aushub sichtbar?",
-    hint:"Grundwasserspiegel laut Gutachten, oder war die Baugrube nass?",
     options:[
-      {icon:"✅",label:"Nein – kein Grundwasser, Boden trocken",  desc:"Boden sandig/kiesig, kein Wasserandrang",   key:"gw",ans:"nein",next:"leitfrage2a"},
-      {icon:"⚠",label:"Ja / Unsicher – Grundwasser vorhanden",   desc:"Nasser Aushub oder Grundwasserspiegel",      key:"gw",ans:"ja",  next:"leitfrage2b"},
+      {icon:"✅",label:"Nein – kein Grundwasser",                 desc:"Boden trocken, sandig/kiesig",                         key:"gw",ans:"nein",next:"leitfrage2a"},
+      {icon:"⚠",label:"Ja / Unsicher",                           desc:"Nasser Aushub oder GW-Spiegel bekannt",                 key:"gw",ans:"ja",  next:"leitfrage2b"},
     ]
   },
-  leitfrage2a: {
-    step:"Schritt 2b · Leitfrage", progress:60,
+  leitfrage2a:{
+    step:"DIN 18533 · Leitfrage",progress:60,
     question:"Staut sich nach Starkregen Wasser am Bauwerk?",
-    hint:"Lehmiger oder bindiger Boden? Kein Gefälle zur Drainage?",
     options:[
-      {icon:"✅",label:"Nein – Wasser versickert schnell",   desc:"Kies/Sand, Drainage vorhanden",          key:"wasser",ans:"W1.1-E",next:"result"},
-      {icon:"⚠",label:"Ja – Wasser staut sich kurzzeitig", desc:"Lehm/Ton, schlechte Versickerung",        key:"wasser",ans:"W1.2-E",next:"result"},
+      {icon:"✅",label:"Nein – versickert schnell",               desc:"Kies/Sand, Drainage vorhanden",                        key:"wasser",ans:"W1.1-E",next:"result"},
+      {icon:"⚠",label:"Ja – staut sich kurzzeitig",              desc:"Lehm/Ton, schlechte Versickerung",                     key:"wasser",ans:"W1.2-E",next:"result"},
     ]
   },
-  leitfrage2b: {
-    step:"Schritt 2b · Leitfrage", progress:60,
+  leitfrage2b:{
+    step:"DIN 18533 · Leitfrage",progress:60,
     question:"Wie hoch steht der Grundwasserspiegel unter GOK?",
-    hint:"Maßgeblich für den Wasserdruck auf die Konstruktion.",
     options:[
-      {icon:"📏",label:"Weniger als 3 m unter GOK",  desc:"GW-Spiegel bei UK-Bodenplatte oder knapp darunter",  key:"wasser",ans:"W2.1-E",next:"result"},
-      {icon:"📏",label:"3 m oder tiefer unter GOK", desc:"Tiefes GW, Druckhöhe über 3 m",                       key:"wasser",ans:"W2.2-E",next:"result"},
+      {icon:"📏",label:"Weniger als 3 m unter GOK",              desc:"GW bei UK-Bodenplatte oder knapp darunter",             key:"wasser",ans:"W2.1-E",next:"result"},
+      {icon:"📏",label:"3 m oder tiefer unter GOK",              desc:"Tiefes GW, Druckhöhe über 3 m",                        key:"wasser",ans:"W2.2-E",next:"result"},
     ]
   },
-  tg_nutzung: {
-    step:"Schritt 2 · TG-Decke / Nutzung", progress:50,
-    question:"Wie wird die TG-Decke / Außendecke genutzt?",
-    hint:"Die Nutzung bestimmt Lastklasse, Schichtaufbau und zugelassenes System.",
-    options:[
-      {icon:"🌿",label:"Begrünt / Erdüberdeckt",  desc:"Extensive oder intensive Dachbegrünung",   key:"nutzung",ans:"gruen",next:"result"},
-      {icon:"🚗",label:"Befahren (PKW / LKW)",    desc:"Parkdeck, Zufahrt, Tiefgaragendecke",      key:"nutzung",ans:"fahr", next:"din18532_waerme"},
-      {icon:"🚶",label:"Begangen (Fußgänger)",    desc:"Dachterrasse, begehbare Fläche",           key:"nutzung",ans:"geh",  next:"result"},
-    ]
-  },
-  sockel_typ: {
-    step:"Schritt 2 · Sockelzone", progress:50,
+  sockel_typ:{
+    step:"DIN 18533 · Sockelzone",progress:50,
     question:"Wie ist die Sockelzone ausgebildet?",
-    hint:"Abdichtung muss mindestens 30 cm über GOK hochgezogen werden.",
     options:[
-      {icon:"📏",label:"Nur Spritzwasserzone (unter 30 cm ü. GOK)", desc:"Putzabschluss, Fassadenunterkante",                      key:"sockel",ans:"kurz", next:"result"},
-      {icon:"🔗",label:"Kombi: Sockel + erdberührte Wand",           desc:"Abdichtung zieht von der Wand in die Sockelzone durch",  key:"sockel",ans:"kombi",next:"result"},
+      {icon:"📏",label:"Nur Spritzwasserzone (< 30 cm ü. GOK)", desc:"Putzabschluss, Fassadenunterkante",                     key:"sockel",ans:"kurz", next:"result"},
+      {icon:"🔗",label:"Kombi: Sockel + erdberührte Wand",       desc:"Abdichtung zieht durchgehend von Wand in Sockelzone",   key:"sockel",ans:"kombi",next:"result"},
     ]
   },
-  dg_typ: {
-    step:"Schritt 2 · Durchdringungstyp", progress:50,
+  dg_typ:{
+    step:"DIN 18533 · Durchdringung",progress:50,
     question:"Um welchen Typ von Durchdringung handelt es sich?",
     options:[
-      {icon:"🔧",label:"Rohr / Leerrohr (rund)",    desc:"Ver- und Entsorgungsleitungen durch Wand oder Sohle",   key:"dg",ans:"rohr",      next:"result"},
-      {icon:"🚪",label:"Tür- / Fensteranschluss",   desc:"Blendrahmen an Abdichtungsebene anschließen",           key:"dg",ans:"tuer",      next:"result"},
-      {icon:"📐",label:"Wand-Boden-Anschluss",      desc:"Übergang Bodenplatte zu aufgehender Wand / Hohlkehle",  key:"dg",ans:"anschluss", next:"result"},
+      {icon:"🔧",label:"Rohr / Leerrohr",                        desc:"Ver- und Entsorgungsleitungen",                         key:"dg",ans:"rohr",      next:"result"},
+      {icon:"🚪",label:"Tür- / Fensteranschluss",                desc:"Blendrahmen an Abdichtungsebene",                       key:"dg",ans:"tuer",      next:"result"},
+      {icon:"📐",label:"Wand-Boden-Anschluss / Hohlkehle",      desc:"Übergang Bodenplatte zu aufgehender Wand",              key:"dg",ans:"anschluss", next:"result"},
+    ]
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // DIN 18534 – INNENRAUM / NASSBEREICH
+  // ══════════════════════════════════════════════════════════════════════════
+  innen_typ:{
+    step:"DIN 18534 · Raumtyp",progress:25,
+    question:"Um welche Art von Nassbereich handelt es sich?",
+    hint:"Bestimmt Beanspruchungsklasse nach DIN 18534-1.",
+    options:[
+      {icon:"🚿",label:"Bad / Dusche privat",                    desc:"Privatbad, gelegentliche Nutzung",                      key:"innentyp",ans:"bad_priv",  next:"innen_klasse"},
+      {icon:"🏊",label:"Dusche / Bad gewerblich",                desc:"Hotel, Sport, hohe Nutzungsfrequenz",                   key:"innentyp",ans:"bad_gew",   next:"innen_klasse"},
+      {icon:"🏊",label:"Schwimmbad / Wasserbecken",              desc:"Hallenbad, privater Pool, Whirlpool",                   key:"innentyp",ans:"schwimm",   next:"innen_klasse"},
+      {icon:"🍳",label:"Küche / Lebensmittelbereich",            desc:"Gastroküche, Lebensmittelverarbeitung",                 key:"innentyp",ans:"kueche",    next:"innen_klasse"},
+      {icon:"🧪",label:"Labor / Industrie",                      desc:"Chemisch beanspruchte Flächen",                        key:"innentyp",ans:"labor",     next:"innen_klasse"},
+    ]
+  },
+  innen_klasse:{
+    step:"DIN 18534 · Beanspruchungsklasse",progress:50,
+    question:"Welche Beanspruchungsklasse liegt vor?",
+    hint:"A0 = trocken, A1 = feucht, A2 = nass, A3 = dauernass / Becken.",
+    options:[
+      {icon:"💦",label:"A1 – Spritzwasser (trockenraum-angrenzend)", desc:"Gelegentlich Spritzwasser, trocknet schnell ab",     key:"bkl",ans:"A1",next:"innen_system"},
+      {icon:"💦",label:"A2 – Nass (dauernde Wasserbelastung)",        desc:"Duschbereich, dauernde Feuchte",                    key:"bkl",ans:"A2",next:"innen_system"},
+      {icon:"🌊",label:"A3 – Becken / dauerhaft Wasser",              desc:"Schwimmbad, Wasserbecken, Dauerbeflutung",          key:"bkl",ans:"A3",next:"innen_system"},
+    ]
+  },
+  innen_system:{
+    step:"DIN 18534 · Systemwahl",progress:72,
+    question:"Welches Abdichtungssystem ist vorgesehen?",
+    hint:"DIN 18534-2 bis -4 regeln die zulässigen Systemtypen.",
+    options:[
+      {icon:"🟦",label:"Bahnenabdichtung (DIN 18534-2)",         desc:"Kunststoff- oder Bitumenbahn im Innenraum",             key:"innensys",ans:"bahn",    next:"result"},
+      {icon:"🟨",label:"Flüssigabdichtung FLK (DIN 18534-3)",   desc:"PMMA, PU, Epoxid – nahtlos, Detailanschlüsse",         key:"innensys",ans:"fluessig",next:"result"},
+      {icon:"⬜",label:"Verbundabdichtung MÄBA (DIN 18534-4)",   desc:"Bauwerksabdichtung im Verbund mit Fliesen",             key:"innensys",ans:"maeba",   next:"result"},
+    ]
+  },
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // DIN 18535 – BEHÄLTER
+  // ══════════════════════════════════════════════════════════════════════════
+  behaelter_typ:{
+    step:"DIN 18535 · Behältertyp",progress:25,
+    question:"Um welchen Behälter / welches Bauwerk handelt es sich?",
+    hint:"Bestimmt Anforderungsklasse nach DIN 18535-1.",
+    options:[
+      {icon:"🚰",label:"Trinkwasserbehälter / -becken",          desc:"Trinkwasser-zugelassene Abdichtung erforderlich",        key:"beh",ans:"trink",   next:"behaelter_system"},
+      {icon:"⚫",label:"Abwasserbauwerk / Kläranlage",            desc:"Kanäle, Becken, chemisch belastet",                     key:"beh",ans:"abwasser",next:"behaelter_system"},
+      {icon:"🏭",label:"Industriebecken / -behälter",             desc:"Chemisch, thermisch oder mechanisch hoch beansprucht",  key:"beh",ans:"industrie",next:"behaelter_system"},
+      {icon:"🌧",label:"Regen- / Löschwasserbecken",              desc:"Rückhaltebecken, Zisternen",                           key:"beh",ans:"regen",   next:"behaelter_system"},
+    ]
+  },
+  behaelter_system:{
+    step:"DIN 18535 · Systemwahl",progress:60,
+    question:"Welches Abdichtungssystem ist vorgesehen?",
+    hint:"DIN 18535-2 und -3 regeln die Systemtypen.",
+    options:[
+      {icon:"⬜",label:"Zementgebundene Abdichtung (DIN 18535-2)", desc:"MDS, KS-Beschichtung – mineralisch, druckwasserfest",  key:"behsys",ans:"mineral",  next:"result"},
+      {icon:"🟨",label:"Kunststoffbeschichtung (DIN 18535-3)",     desc:"EP, PUR, PMMA – chemisch beständig",                  key:"behsys",ans:"kunst",    next:"result"},
     ]
   },
 };
 
-// ── DIN 18532 Zusatzschritte (befahrene Flächen) ──
-Object.assign(TREE, {
-  din18532_waerme: {
-    step:"Schritt 3 · DIN 18532 – Wärmedämmung", progress:65,
-    question:"Ist eine Wärmedämmung im Aufbau vorgesehen?",
-    hint:"Umkehrdach oder Warmdach-Aufbau? Beeinflusst die zulässigen Systemvarianten nach DIN 18532.",
-    options:[
-      {icon:"🌡",label:"Ja – Wärmedämmung vorhanden",     desc:"Umkehrdach, Warmdach, Dämmung auf oder unter Abdichtung",  key:"waerme",ans:"ja",   next:"din18532_geo"},
-      {icon:"❄",label:"Nein – kein Wärmedämmaufbau",      desc:"Unbeheizte TG-Decke, Hofkellerdecke ohne Dämmung",         key:"waerme",ans:"nein", next:"din18532_geo"},
-    ]
-  },
-  din18532_geo: {
-    step:"Schritt 4 · DIN 18532 – Geometrie / Randbedingungen", progress:72,
-    question:"Welche besonderen Randbedingungen liegen vor?",
-    hint:"Mehrere Antworten möglich – wähle die am stärksten zutreffende.",
-    options:[
-      {icon:"📐",label:"Komplexe Geometrie / viele Durchdringungen", desc:"Rampen, Spindeln, viele Abläufe und Anschlüsse",          key:"geo",ans:"komplex",  next:"din18532_direkt"},
-      {icon:"📏",label:"Geringe Aufbauhöhe erforderlich",             desc:"Wenig Platz für Systemaufbau, Übergänge zu Bodenbelägen", key:"geo",ans:"flach",    next:"din18532_direkt"},
-      {icon:"🔲",label:"Einfache Fläche, Standard-Geometrie",         desc:"Regelmäßige Parkdeckfläche, wenige Anschlüsse",           key:"geo",ans:"standard", next:"din18532_system"},
-    ]
-  },
-  din18532_direkt: {
-    step:"Schritt 4b · DIN 18532 – Direkte Befahrung", progress:78,
-    question:"Wird die Abdichtung direkt befahren (ohne Belag)?",
-    hint:"Direkt befahrene Abdichtungen erfordern zwingend DIN 18532-6 (FLK/OS-System).",
-    options:[
-      {icon:"🚗",label:"Ja – Abdichtung direkt befahren",    desc:"Kein Betonbelag, Abdichtung ist Nutzschicht",    key:"direkt",ans:"ja",   next:"result"},
-      {icon:"🧱",label:"Nein – Belag auf Abdichtung",         desc:"Betonbelag, Asphalt oder Gussasphalt darüber",   key:"direkt",ans:"nein", next:"din18532_system"},
-    ]
-  },
-  din18532_system: {
-    step:"Schritt 5 · DIN 18532 – Systemwunsch", progress:85,
-    question:"Welches Abdichtungssystem ist bevorzugt?",
-    hint:"Alle drei Systeme sind nach DIN 18532 für befahrene Flächen zugelassen.",
-    options:[
-      {icon:"🟦",label:"Kunststoff-/Elastomerbahn (DIN 18532-4)",           desc:"ECB, PVC-P, PIB, EPDM, FPO – 1 Lage Kunststoffbahn",         key:"system18532",ans:"18532-4", next:"result"},
-      {icon:"🟫",label:"Bitumen + Kunststoffbahn (DIN 18532-5)",            desc:"Verbundsystem: Polymerbitumenbahn + Kunststoffbahn",           key:"system18532",ans:"18532-5", next:"result"},
-      {icon:"🟨",label:"Flüssigkunststoff FLK / OS-System (DIN 18532-6)",   desc:"PMMA, PU, OS10/11a/11b – nahtlos, komplex anwendbar",         key:"system18532",ans:"18532-6", next:"result"},
-    ]
-  },
-});
+// ═══════════════════════════════════════════════════════════════════════════════
+// RESULTS
+// ═══════════════════════════════════════════════════════════════════════════════
+var RESULTS={
 
-// ─── StLB-Texte ───────────────────────────────────────────────────────────────
-// Orientiert an StLB-Bau Leistungsbereich 014 (Abdichtungsarbeiten)
-// und LB 016 (Dachabdichtungsarbeiten). Texte sind Musterformulierungen.
-var STLB = {
+  // ── DIN 18531 FLACHDACH ────────────────────────────────────────────────────
+  "dach|warm_nb|bitumen":{klasse:"DIN 18531-2",badge:"badge-low",
+    title:"Flachdach Warmdach · Bitumenbahnen",
+    subtitle:"Polymerbitumen-Schweißbahnen, nicht begehbar. DIN 18531-1 und -2.",
+    systeme:[
+      {prim:true, name:"PYE PV 200 S5 – 2-lagig, Schweißbahn",      note:"Oberlage mit Schieferung oder Besandung, vollflächig verklebt"},
+      {prim:false,name:"Selbstklebende Bitumenbahn (SKS)",            note:"Kaltselbstklebesystem, nur mit Systemherstellerfreigabe"},
+    ],
+    checks:["Gefälle mind. 2 % (DIN 18531-1 §5.3)","Dampfsperre unter Dämmung (Taupunkt prüfen!)","Stöße 2-lagig versetzt, mind. 30 cm","Anschlüsse mind. 15 cm über OK Belag","Notüberläufe eingebaut?","Brandschutzklasse der Dachabdichtung prüfen"],
+    warnungen:[],norm:"DIN 18531-1:2017 · DIN 18531-2:2017"},
 
-  "wand|W1.1-E": [
-    {
-      nr: "014.110",
-      kurz: "Bitumendickanstrich / PMBC – Kelleraußenwand, W1.1-E",
-      lang:
-"Pos. 014.110\n" +
-"Bitumendickbeschichtung (PMBC) auf Kelleraußenwand\n" +
-"Wassereinwirkungsklasse W1.1-E nach DIN 18533\n\n" +
-"Leistung:\n" +
-"Aufbringen einer kunststoffvergüteten Bitumendickbeschichtung\n" +
-"(PMBC) auf die erdberührte Außenwand des Kellergeschosses,\n" +
-"2-lagig kreuzweise im Streich- oder Spritzverfahren.\n\n" +
-"Ausführung nach DIN 18533-2, System W1.1-E.\n\n" +
-"Technische Anforderungen:\n" +
-"- Mindest-Trockenfilmdicke: 4,0 mm\n" +
-"- Lagen: mindestens 2, kreuzweise aufgebracht\n" +
-"- Voranstrich: lt. Systemherstellerfreigabe\n" +
-"- Untergrund: trocken, tragfähig, frei von Staub und Öl\n" +
-"- Ausführung bei Lufttemperatur > +5 °C\n\n" +
-"Nebenleistungen:\n" +
-"Voranstrich (Primer), Oberflächenvorbereitung,\n" +
-"Liefern und Aufbringen der Abdichtungsmasse.\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    },
-    {
-      nr: "014.115",
-      kurz: "Schutzlage Noppenbahn – auf PMBC Kelleraußenwand",
-      lang:
-"Pos. 014.115\n" +
-"Schutzlage aus Noppenbahn, PE, auf Abdichtung\n\n" +
-"Leistung:\n" +
-"Liefern und Verlegen einer Noppenbahn als Schutzschicht\n" +
-"auf der fertiggestellten Bitumendickbeschichtung.\n\n" +
-"Technische Anforderungen:\n" +
-"- Material: HDPE-Noppenbahn, Noppenhöhe mind. 8 mm\n" +
-"- Überlappung: mind. 10 cm\n" +
-"- Befestigung am Wandkopf mit Klemmschiene\n" +
-"- Filtervlies ≥ 200 g/m² werkseitig kaschiert\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|warm_nb|kunst":{klasse:"DIN 18531-3",badge:"badge-low",
+    title:"Flachdach Warmdach · Kunststoff-/Elastomerbahn",
+    subtitle:"PVC-P, FPO, EPDM – nahtgeschweißt, 1-lagig. DIN 18531-3.",
+    systeme:[
+      {prim:true, name:"PVC-P oder FPO Bahn – 1-lagig",             note:"Mechanisch befestigt oder vollflächig verklebt"},
+      {prim:false,name:"EPDM Bahn – 1-lagig",                        note:"Geklebt oder mit Klebeband-System"},
+    ],
+    checks:["Unterlagebahn oder Vlies unter Kunststoffbahn","Schweißnahtprüfung (Luftkanaltest)","Dachdurchdringungen mit systemkonformem Flansch","Anschlüsse mind. 15 cm über OK Belag","Gefälle mind. 2 %"],
+    warnungen:[],norm:"DIN 18531-1:2017 · DIN 18531-3:2017"},
 
-  "wand|W1.2-E": [
-    {
-      nr: "014.120",
-      kurz: "PMBC + Gewebeeinlage – Kelleraußenwand, W1.2-E",
-      lang:
-"Pos. 014.120\n" +
-"Bitumendickbeschichtung mit Gewebeeinlage – W1.2-E\n\n" +
-"Leistung:\n" +
-"Aufbringen einer PMBC mit eingebetteter Vlies-/Gewebeeinlage\n" +
-"auf die erdberührte Kelleraußenwand, 2-lagig.\n\n" +
-"Ausführung nach DIN 18533-2, System W1.2-E.\n\n" +
-"Technische Anforderungen:\n" +
-"- Gewebeeinlage: mind. 120 g/m² Glasvlies oder Polyestervlies\n" +
-"- Gewebeeinlage vollflächig in Erstlage einbetten\n" +
-"- Mindest-Trockenfilmdicke gesamt: 4,0 mm\n" +
-"- Sonderausführung an Kehlen, Ecken und Durchdringungen\n" +
-"- Drainage (Noppenbahn + Filtervlies) als Folgeposition\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    },
-    {
-      nr: "014.121",
-      kurz: "Hohlkehle PMBC – Wand-/Sohleanschluss",
-      lang:
-"Pos. 014.121\n" +
-"Hohlkehle aus PMBC am Wand-/Sohleanschluss\n\n" +
-"Leistung:\n" +
-"Herstellen einer Hohlkehle am Übergang Bodenplatte/Wand\n" +
-"aus Bitumendickbeschichtung mit Gewebeeinlage.\n\n" +
-"Technische Anforderungen:\n" +
-"- Innenradius mind. 4 cm (kein rechter Winkel!)\n" +
-"- Gewebeeinlage in Hohlkehle vollflächig einbetten\n" +
-"- Systemkonform zur Flächenabdichtung\n\n" +
-"Einheit: m\n" +
-"Menge: ______ m"
-    }
-  ],
+  "dach|warm_nb|fluessig":{klasse:"DIN 18531-4",badge:"badge-low",
+    title:"Flachdach Warmdach · Flüssigabdichtung (FLK)",
+    subtitle:"PMMA oder PU – nahtlos, ideal für Anschlüsse und komplexe Geometrien.",
+    systeme:[
+      {prim:true, name:"PMMA-Flüssigabdichtung, 2-lagig mit Vlies", note:"Schnelle Aushärtung, kalt verarbeitbar, DIN 18531-4"},
+      {prim:false,name:"PU-Flüssigabdichtung",                       note:"Langsame Aushärtung, flexibel"},
+    ],
+    checks:["Untergrundprüfung (Haftung, Feuchte, Risse)","Vlieseinlage in Erstlage vollflächig","Schichtdickenprotokoll je Lage","Anschlüsse nahtlos integriert","Aushärtungsprotokoll vor Begehung"],
+    warnungen:[],norm:"DIN 18531-1:2017 · DIN 18531-4:2017"},
 
-  "wand|W2.1-E": [
-    {
-      nr: "014.130",
-      kurz: "PMBC gewebeverstärkt – Kelleraußenwand, W2.1-E, Druckwasser",
-      lang:
-"Pos. 014.130\n" +
-"PMBC vollgewebeverstärkt – Drückendes Wasser ≤ 3 m\n\n" +
-"Leistung:\n" +
-"Aufbringen einer vollgewebeverstärkten PMBC auf die\n" +
-"erdberührte Kelleraußenwand.\n" +
-"Wassereinwirkungsklasse W2.1-E nach DIN 18533.\n\n" +
-"Ausführung nach DIN 18533-2, System W2.1-E.\n\n" +
-"Technische Anforderungen:\n" +
-"- Gewebeverstärkung in ALLEN Lagen (kein Teilbereich unversärkt)\n" +
-"- Vlies: mind. 200 g/m² Polyestervlies\n" +
-"- Schichtdicke nach Systemhersteller, mind. 4,0 mm\n" +
-"- Arbeitsfugen: Fugenband oder Quellprofil\n" +
-"- Schichtdicken protokollieren (Dokumentationspflicht DIN 18533)\n\n" +
-"Nebenleistungen:\n" +
-"Primer, Voranstrich, Protokollierung der Schichtdicken.\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    },
-    {
-      nr: "014.131",
-      kurz: "Arbeitsfuge abdichten – Quellprofil / Fugenband, W2.1-E",
-      lang:
-"Pos. 014.131\n" +
-"Abdichten von Arbeitsfugen – Quellprofil\n\n" +
-"Leistung:\n" +
-"Einbau eines quellfähigen Fugenprofils in Betonier-\n" +
-"arbeitsfugen zwischen Bodenplatte und aufgehender Wand.\n\n" +
-"Technische Anforderungen:\n" +
-"- Quellprofil: Bentonit- oder Hydrogelband, CE-gekennzeichnet\n" +
-"- Befestigung: Nagelung lt. Herstellerangabe\n" +
-"- Überlapplänge mind. 10 cm\n" +
-"- Schutz vor vorzeitiger Aktivierung durch Befeuchten\n\n" +
-"Einheit: m\n" +
-"Menge: ______ m"
-    }
-  ],
+  "dach|warm_nb|metall":{klasse:"DIN 18531-5",badge:"badge-mid",
+    title:"Flachdach · Metallbahn-Abdichtung",
+    subtitle:"Blei, Kupfer, Zink, Edelstahl – Sonderbauten und denkmalgeschützte Objekte.",
+    systeme:[
+      {prim:true, name:"Edelstahl- oder Kupferbahn",                 note:"Geschweißt oder gelötet, DIN 18531-5"},
+      {prim:false,name:"Bleibahn",                                    note:"Nur bei Sanierung, Gesundheitsschutz beachten"},
+    ],
+    checks:["Metallausdehnung: Dehnfugen und Gleitlager einplanen","Elektrochemische Korrosion: Materialkombinationen prüfen","Schweißer-Qualifikation nachweisen","Unterlagebahn / Trennlage vorsehen"],
+    warnungen:["Bleibahn: Gesundheits- und Umweltschutz – nur bei Bestandssanierung!"],
+    norm:"DIN 18531-1:2017 · DIN 18531-5:2017"},
 
-  "wand|W2.2-E": [
-    {
-      nr: "014.140",
-      kurz: "Abdichtungsbahnen Bitumen – Kelleraußenwand, W2.2-E, hoher Druck",
-      lang:
-"Pos. 014.140\n" +
-"Bitumen-Schweißbahnen – Drückendes Wasser > 3 m (W2.2-E)\n\n" +
-"Leistung:\n" +
-"Verlegen und Verschweißen von Bitumen-Schweißbahnen\n" +
-"auf der erdberührten Kelleraußenwand, wannenartig,\n" +
-"vollflächig verklebt.\n\n" +
-"Ausführung nach DIN 18533-2, System W2.2-E.\n" +
-"Fachplanung LP 5 Abdichtung ist Voraussetzung.\n\n" +
-"Technische Anforderungen:\n" +
-"- Bahnentyp: Polymerbitumenbahn, mind. PYE PV 200 S5\n" +
-"- Lagen: 2-lagig, Nähte versetzt mind. 50 cm\n" +
-"- Nahtüberlappung: mind. 10 cm längs, 15 cm quer\n" +
-"- Vollflächige Verklebung / Verschweißung\n" +
-"- Wannenanschluss lückenlos – kein Systemwechsel\n" +
-"- Qualitätssicherungsplan (QSP) Pflicht\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|begeh|bitumen":{klasse:"DIN 18531-2",badge:"badge-low",
+    title:"Begehbare Dachterrasse · Bitumenbahnen",
+    subtitle:"2-lagige Schweißbahn unter begehbarem Belag.",
+    systeme:[
+      {prim:true, name:"PYE PV 200 S4 – 2-lagig + Schutzbahn",     note:"Plattenbelag stelzgelagert und hinterlüftet"},
+      {prim:false,name:"Selbstklebende Bitumenbahn 2-lagig",         note:"Kaltes System, Systemherstellerfreigabe"},
+    ],
+    checks:["Gefälle mind. 1,5 % (besser 2 %) zur Entwässerung","Sockelhöhe mind. 15 cm über OK Belag","Schutzlage über Abdichtung vor Belagsarbeiten","Plattenbelag stelzgelagert und hinterlüftet","Anschlüsse Geländer und Aufkantungen abdichten"],
+    warnungen:[],norm:"DIN 18531-1:2017 · DIN 18531-2:2017"},
 
-  "sohle|W1.1-E": [
-    {
-      nr: "014.210",
-      kurz: "PMBC auf Bodenplatte – Bodenfeuchte W1.1-E",
-      lang:
-"Pos. 014.210\n" +
-"Bitumendickbeschichtung auf Bodenplatte / Sohle, W1.1-E\n\n" +
-"Leistung:\n" +
-"Aufbringen einer PMBC auf die Sauberkeitsschicht unter\n" +
-"der Bodenplatte, 2-lagig.\n\n" +
-"Ausführung nach DIN 18533-2, Sohle W1.1-E.\n\n" +
-"Technische Anforderungen:\n" +
-"- Untergrund: Sauberkeitsschicht mind. 5 cm Dicke\n" +
-"- Abdichtung vollflächig geschlossen, keine Perforierung\n" +
-"- Aufkantung an aufgehender Wand: mind. 15 cm\n" +
-"- Schutzschicht vor Betonage vorsehen\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|begeh|kunst":{klasse:"DIN 18531-3",badge:"badge-low",
+    title:"Begehbare Dachterrasse · Kunststoffbahn",
+    subtitle:"PVC-P oder FPO unter Terrassenbelag.",
+    systeme:[
+      {prim:true, name:"PVC-P oder FPO 1-lagig + Schutzmatte",     note:"Plattenbelag stelzgelagert"},
+      {prim:false,name:"EPDM mit Klebsystem",                        note:"Systemherstellerfreigabe für begehbaren Aufbau"},
+    ],
+    checks:["Gefälle mind. 1,5 %","Sockelhöhe mind. 15 cm über OK Belag","Schutzschicht / Vlies unter Belag","Schweißnahtprüfung der Kunststoffbahn"],
+    warnungen:[],norm:"DIN 18531-1:2017 · DIN 18531-3:2017"},
 
-  "sohle|W1.2-E": [
-    {
-      nr: "014.220",
-      kurz: "PMBC mit Vlies – Bodenplatte Sickerwasser W1.2-E",
-      lang:
-"Pos. 014.220\n" +
-"Bitumendickbeschichtung mit Vlieseinlage auf Sohle, W1.2-E\n\n" +
-"Leistung:\n" +
-"Aufbringen einer PMBC mit Vlieseinlage auf Sauberkeitsschicht\n" +
-"unter der Bodenplatte, 2-lagig.\n\n" +
-"Technische Anforderungen:\n" +
-"- Schichtdicke mind. 4 mm gesamt\n" +
-"- Vlieseinlage in alle Kehlenübergänge einbetten\n" +
-"- Nahtüberlappungen mind. 10 cm, Stöße versetzt\n" +
-"- Hohlkehle am Wandfuß: Innenradius mind. 4 cm\n" +
-"- Aufkantung an Wand mind. 15 cm\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|begeh|fluessig":{klasse:"DIN 18531-4",badge:"badge-low",
+    title:"Begehbare Dachterrasse · Flüssigabdichtung",
+    subtitle:"Nahtlose FLK-Abdichtung unter Belag – ideal bei komplexen Grundrissen.",
+    systeme:[
+      {prim:true, name:"PMMA-Flüssigabdichtung mit Vlies, 2-lagig", note:"Schutzbahn vor Belagsarbeiten"},
+      {prim:false,name:"PU-Abdichtung",                              note:"Langsame Aushärtung, Systemherstellerfreigabe"},
+    ],
+    checks:["Untergrundprüfung vor Auftrag","Schichtdicke nach Systemspezifikation","Schutzlage vor Plattenarbeiten","Gefälle mind. 1,5 %"],
+    warnungen:[],norm:"DIN 18531-1:2017 · DIN 18531-4:2017"},
 
-  "sohle|W2.1-E": [
-    {
-      nr: "014.230",
-      kurz: "Bitumen-Schweißbahnen Sohle – Druckwasser ≤ 3 m, W2.1-E",
-      lang:
-"Pos. 014.230\n" +
-"Bitumen-Schweißbahnen auf Bodenplatte, W2.1-E\n\n" +
-"Leistung:\n" +
-"Verlegen von Bitumen-Schweißbahnen auf der Sauberkeitsschicht\n" +
-"unter der Bodenplatte, vollflächig verklebt, 2-lagig.\n\n" +
-"Ausführung nach DIN 18533-2, Sohle W2.1-E.\n\n" +
-"Technische Anforderungen:\n" +
-"- Bahnentyp: PYE PV 200 S4 oder gleichwertig\n" +
-"- 2-lagig, Nähte mind. 10 cm Überlappung\n" +
-"- Aufkantung an Wand durchgehend, lückenlos\n" +
-"- Statischer Auftriebsnachweis vorliegend (Tragwerksplaner)\n" +
-"- Dehnfuge / Fugenband an Anschlussbereichen\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|begeh|metall":{klasse:"DIN 18531-5",badge:"badge-mid",
+    title:"Begehbare Dachterrasse · Metallbahn",
+    subtitle:"Sonderlösung für denkmalgeschützte oder architektonisch besondere Objekte.",
+    systeme:[
+      {prim:true, name:"Edelstahlbahn mit Schutzlage",              note:"Geschweißt, Belag auf Schutzlage"},
+      {prim:false,name:"Kupferbahn mit Schutzlage",                  note:"Gelötet oder geschweißt"},
+    ],
+    checks:["Dehnfugen und Gleitlager","Schutzschicht unter Belag zwingend","Schweißer-Qualifikation","Elektrochemische Korrosion prüfen"],
+    warnungen:["Metallbahn unter Belag: Schutzlage Pflicht, kein Direktkontakt!"],
+    norm:"DIN 18531-1:2017 · DIN 18531-5:2017"},
 
-  "sohle|W2.2-E": [
-    {
-      nr: "014.240",
-      kurz: "Wannensystem Schwarze Wanne – Sohle W2.2-E, hoher Druck",
-      lang:
-"Pos. 014.240\n" +
-"Wannenabdichtung (Schwarze Wanne) auf Sohle, W2.2-E\n\n" +
-"Leistung:\n" +
-"Herstellen einer vollständig geschlossenen Wannenabdichtung\n" +
-"aus Bitumen-Schweißbahnen auf Sohle und aufgehenden Wänden.\n\n" +
-"Ausführung nach DIN 18533, geprüftem Abdichtungsplan,\n" +
-"Fachplanung LP 5 ist Voraussetzung.\n\n" +
-"Technische Anforderungen:\n" +
-"- Bahnentyp: PYE PV 200 S5 (Kaltselbstklebesystem oder Schweißen)\n" +
-"- Wannenanschluss lückenlos, kein Systemwechsel ohne Übergangsdetail\n" +
-"- Qualitätssicherungsplan (QSP) Pflicht\n" +
-"- Auftriebssicherung statisch nachgewiesen\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|gruen|bitumen":{klasse:"DIN 18531-2",badge:"badge-mid",
+    title:"Gründach · Bitumenbahnen (wurzelfest)",
+    subtitle:"Wurzelfeste Schweißbahn nach DIN 18531-2 und FLL-Richtlinie.",
+    systeme:[
+      {prim:true, name:"Wurzelfeste Polymerbitumenbahn – FLL-geprüft", note:"2-lagig, FLL-Zulassung und Systemnachweis Pflicht"},
+      {prim:false,name:"Wurzelfeste PVC-P oder FPO Bahn",              note:"1-lagig, FLL-geprüft nach DIN 18531-3"},
+    ],
+    checks:["FLL-Zulassung des Bahnsystems vorliegen?","Gefälle mind. 1,5 %","Schutzmatte und Drainageschicht + Filtervlies","Notüberläufe zwingend einbauen","Substrataufbau nach FLL"],
+    warnungen:["Ohne FLL-Zulassung kein Gründach – Systemgeber konsultieren!"],
+    norm:"DIN 18531-1:2017 · DIN 18531-2 · FLL-Richtlinie"},
 
-  "tg|gruen": [
-    {
-      nr: "016.310",
-      kurz: "Dachabdichtung Bitumenbahn wurzelfest – Begrünung, W3-E",
-      lang:
-"Pos. 016.310\n" +
-"Bitumen-Schweißbahn wurzelfest, TG-Decke begrünt, W3-E\n\n" +
-"Leistung:\n" +
-"Verlegen und Verschweißen von wurzelfesten Bitumen-\n" +
-"Schweißbahnen auf der Tiefgaragendecke / Außendecke\n" +
-"als Abdichtung unter Begrünungsaufbau.\n\n" +
-"Ausführung nach DIN 18533 / FLL-Richtlinie Dachbegrünung.\n\n" +
-"Technische Anforderungen:\n" +
-"- Bahnentyp: wurzelfeste Bitumenbahn mit FLL-Nachweis\n" +
-"- Lagen: 2-lagig, Nähte mind. 8 cm überlappen\n" +
-"- Gefälle: mind. 1,5 %, besser 2 %\n" +
-"- Schutzmatte / Schutzbahn über gesamter Fläche\n" +
-"- Drainageschicht + Filtervlies auf Abdichtung\n" +
-"- Notüberläufe einplanen und abdichten\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|gruen|kunst":{klasse:"DIN 18531-3",badge:"badge-mid",
+    title:"Gründach · Kunststoffbahn (wurzelfest)",
+    subtitle:"FPO oder PVC-P, wurzelfest, FLL-geprüft.",
+    systeme:[
+      {prim:true, name:"FPO oder PVC-P Bahn – 1-lagig, FLL-geprüft", note:"Wurzelfestigkeit nachgewiesen"},
+      {prim:false,name:"EPDM wurzelfest",                              note:"FLL-Zulassung erforderlich"},
+    ],
+    checks:["FLL-Zulassung vorliegen?","Gefälle mind. 1,5 %","Drainageschicht + Filtervlies","Notüberläufe einbauen"],
+    warnungen:["Ohne FLL-Zulassung kein Gründach!"],
+    norm:"DIN 18531-1:2017 · DIN 18531-3 · FLL-Richtlinie"},
 
-  "tg|fahr": [
-    {
-      nr: "016.320",
-      kurz: "OS 11b Reaktionsharz – TG-Decke befahrbar, W3-E",
-      lang:
-"Pos. 016.320\n" +
-"Reaktionsharz-Abdichtungssystem OS 11b – befahrbar, W3-E\n\n" +
-"Leistung:\n" +
-"Aufbringen eines zugelassenen Reaktionsharz-\n" +
-"Abdichtungssystems (OS 11b) auf der befahrbaren\n" +
-"Tiefgaragendecke.\n\n" +
-"Ausführung nach DIN 28052, Systemzulassung Hersteller,\n" +
-"ZTV-ING Teil 3 Abschnitt 4.\n\n" +
-"Technische Anforderungen:\n" +
-"- System: PMMA- oder PU-Abdichtung OS 11b, CE-zugelassen\n" +
-"- Gesamtschichtdicke nach Systemspezifikation\n" +
-"- Untergrundvorbereitung: Risse verpressen, Gefälle prüfen\n" +
-"- Dehnfugenprofile druckwasserdicht ausführen\n" +
-"- Abläufe: systemkonformer Flanschanschluss\n" +
-"- Schichtdickenprotokoll und Systemherstellerfreigabe\n" +
-"- Freigabe zur Befahrbarkeit nach vollständiger Aushärtung\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|gruen|fluessig":{klasse:"DIN 18531-4",badge:"badge-mid",
+    title:"Gründach · Flüssigabdichtung (FLK)",
+    subtitle:"Nahtlose FLK-Abdichtung unter Gründachaufbau – nur Extensivbegrünung.",
+    systeme:[
+      {prim:true, name:"PMMA FLK mit Vlies, wurzelfest",             note:"Systemherstellerfreigabe für Gründach Pflicht"},
+      {prim:false,name:"PU-Abdichtung wurzelfest",                    note:"Systemherstellerfreigabe erforderlich"},
+    ],
+    checks:["Systemherstellerfreigabe für Gründach?","Schutzmatte zwingend über FLK","Gefälle mind. 1,5 %","Nur für Extensivbegrünung – nicht für intensive Begrünung!"],
+    warnungen:["FLK unter Intensivbegrünung nur mit besonderer Systemherstellerfreigabe!"],
+    norm:"DIN 18531-1:2017 · DIN 18531-4 · FLL"},
 
+  "dach|gruen|metall":{klasse:"DIN 18531-5",badge:"badge-mid",
+    title:"Gründach · Metallbahn",
+    subtitle:"Sonderlösung, nur in besonderen Fällen.",
+    systeme:[
+      {prim:true, name:"Edelstahlbahn mit Schutzlage",               note:"Wurzelfest, FLL-Nachweis erforderlich"},
+    ],
+    checks:["FLL-Nachweis der Metallbahn für Gründach","Schutzlage Pflicht","Dehnfugen"],
+    warnungen:["Metallbahn unter Gründach: Sonderlösung – Fachplaner einbinden!"],
+    norm:"DIN 18531-5:2017 · FLL"},
 
-  "tg|fahr|direkt": [
-    {
-      nr: "016.321",
-      kurz: "OS 11b direkt befahren – DIN 18532-6, ohne Belag",
-      lang:
-"Pos. 016.321\n" +
-"Flüssigkunststoff-Abdichtung OS 11b – direkt befahrbar\n" +
-"nach DIN 18532-6:2025-06\n\n" +
-"Leistung:\n" +
-"Aufbringen eines zugelassenen Flüssigkunststoff-\n" +
-"Abdichtungssystems OS 11b auf der befahrbaren Fläche\n" +
-"als direkt genutzte Abdichtung ohne Belag.\n\n" +
-"Ausführung nach DIN 18532-6:2025-06, System OS 11b,\n" +
-"Nutzungsklasse N2-V oder N3-V.\n\n" +
-"Technische Anforderungen:\n" +
-"- System: PMMA- oder PU-Abdichtung OS 11b, bauaufsichtl. zugelassen\n" +
-"- Nutzungsklasse: N2-V (PKW) oder N3-V (LKW/Schwerlast)\n" +
-"- Rissklasse: R1-V\n" +
-"- Untergrundvorbereitung: Risse verpressen, Rautiefenausgleich\n" +
-"- Schichtdickenprotokoll je Lage (Nassfilm)\n" +
-"- Dehnfugenprofile druckwasserdicht, systemkonform\n" +
-"- Aushärtungsprotokoll und Herstellerfreigabe vor Nutzung\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
-  "tg|fahr|18532-4": [
-    {
-      nr: "016.340",
-      kurz: "Kunststoffbahn 1-lagig befahrbar – DIN 18532-4:2025-06",
-      lang:
-"Pos. 016.340\n" +
-"Kunststoff-/Elastomerbahn, 1-lagig, befahrbar\n" +
-"nach DIN 18532-4:2025-06\n\n" +
-"Leistung:\n" +
-"Verlegen und Verschweißen einer Kunststoff- oder Elastomerbahn\n" +
-"auf der befahrbaren Tiefgaragendecke / Außendecke.\n\n" +
-"Ausführung nach DIN 18532-4:2025-06.\n\n" +
-"Technische Anforderungen:\n" +
-"- Bahnentyp: ECB / PVC-P / FPO / EPDM / PIB (nach System)\n" +
-"- Bauweise: 1a, 2a oder 2b (mit/ohne Wärmedämmung)\n" +
-"- Nutzungsklasse: N1-V / N2-V / N3-V festlegen\n" +
-"- Rissklasse: R1-V\n" +
-"- Rautiefenausgleich vor Bahnenlage herstellen\n" +
-"- Unterlaufsicherheit gemäß DIN 18532-4:2025-06 sicherstellen\n" +
-"- Überlappungsnähte: Schweißnahtprüfung (Heißluft oder Quellschweißung)\n" +
-"- Dehnfugenprofile und Ablaufanschlüsse systemkonform\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
-  "tg|fahr|18532-5": [
-    {
-      nr: "016.350",
-      kurz: "Verbundsystem Polymerbitumen + Kunststoffbahn – DIN 18532-5:2025-06",
-      lang:
-"Pos. 016.350\n" +
-"Verbundsystem: Polymerbitumenbahn + Kunststoff-/Elastomerbahn\n" +
-"nach DIN 18532-5:2025-06\n\n" +
-"Leistung:\n" +
-"Verlegen und Verschweißen eines Verbundabdichtungssystems\n" +
-"aus Polymerbitumenbahn (untere Lage) und Kunststoff-/\n" +
-"Elastomerbahn (obere Lage) auf der Tiefgaragendecke.\n\n" +
-"Ausführung nach DIN 18532-5:2025-06.\n\n" +
-"Technische Anforderungen:\n" +
-"- Untere Lage: Polymerbitumenbahn (PYE PV 200 S4 oder gleichw.)\n" +
-"- Obere Lage: Kunststoff-/Elastomerbahn nach Systemhersteller\n" +
-"- Bauweisen: 1a, 2a, 2b\n" +
-"- Nutzungsklassen: N1-V bis N3-V\n" +
-"- Rautiefenausgleich und Untergrundbehandlung nach 2025-06\n" +
-"- Stöße beider Lagen versetzt mind. 30 cm\n" +
-"- Systemherstellerfreigabe für Verbund Pflicht\n" +
-"- Dehnfugenprofile systemkonform ausführen\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
-  "tg|fahr|18532-6": [
-    {
-      nr: "016.360",
-      kurz: "Flüssigkunststoff FLK / OS-System – DIN 18532-6:2025-06",
-      lang:
-"Pos. 016.360\n" +
-"Flüssigkunststoff-Abdichtung (FLK) nach DIN 18532-6:2025-06\n" +
-"OS-System für befahrene Flächen\n\n" +
-"Leistung:\n" +
-"Aufbringen eines zugelassenen Flüssigkunststoff-\n" +
-"Abdichtungssystems (OS 10 / OS 11a / OS 11b) auf der\n" +
-"Tiefgaragendecke / Außendecke.\n\n" +
-"Ausführung nach DIN 18532-6:2025-06.\n\n" +
-"Systemvariante (Position konkretisieren):\n" +
-"[ ] OS 10   – Fußgänger + leicht befahren (N1-V)\n" +
-"[ ] OS 11a  – leicht befahrbar PKW (N1-V/N2-V)\n" +
-"[ ] OS 11b  – befahrbar PKW/LKW (N2-V/N3-V)\n\n" +
-"Technische Anforderungen:\n" +
-"- Rissklasse: R1-V\n" +
-"- Rautiefenausgleich vor Systemauftrag\n" +
-"- Schichtdicken je Lage protokollieren\n" +
-"- Dehnfugen und Abläufe nahtlos integriert\n" +
-"- Systemherstellerfreigabe und Aushärtungsprotokoll\n" +
-"- HINWEIS: OS 8 ist seit DIN 18532-6:2025-06 GESTRICHEN\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|umkehr|bitumen":{klasse:"DIN 18531-2",badge:"badge-mid",
+    title:"Umkehrdach · Bitumenbahnen",
+    subtitle:"Abdichtung unter der Wärmedämmung. Besondere Anforderungen an Beständigkeit.",
+    systeme:[
+      {prim:true, name:"PYE PV 200 S5 – 2-lagig, robust",           note:"Unter XPS-Dämmung, vollflächig verklebt"},
+      {prim:false,name:"Selbstklebesystem SKS",                       note:"Systemherstellerfreigabe für Umkehrdach"},
+    ],
+    checks:["Gefälle mind. 2 % (Wasser muss unter Dämmung ablaufen!)","Schutzbahn über Abdichtung, unter Dämmung","XPS-Dämmung druckfest, wasserbeständig","Filtervlies auf Dämmung","Ballastschicht (Kies oder Belag) auf Filtervlies"],
+    warnungen:["Umkehrdach: Abdichtung dauerhaft befeuchtet – nur beständige Systeme!"],
+    norm:"DIN 18531-1:2017 §6 (Umkehrdach) · DIN 18531-2"},
 
-  "tg|geh": [
-    {
-      nr: "016.330",
-      kurz: "Bitumenbahn 2-lagig – TG-Decke begangen, W3-E",
-      lang:
-"Pos. 016.330\n" +
-"Bitumenbahn 2-lagig auf begehbarer Außendecke, W3-E\n\n" +
-"Leistung:\n" +
-"Verlegen und Verschweißen von Bitumenbahnen auf der\n" +
-"begehbaren Außen- oder Terrassendecke, 2-lagig,\n" +
-"mit Schutzbahn.\n\n" +
-"Ausführung nach DIN 18533 / Flachdachrichtlinie 2023.\n\n" +
-"Technische Anforderungen:\n" +
-"- Bahnentyp: PYE PV 200 S4 oder gleichwertig\n" +
-"- Gefälle mind. 1,5 %, besser 2 %\n" +
-"- Sockelhöhe: Abdichtung mind. 15 cm über OK Belag\n" +
-"- Schutzbahn über Abdichtung\n" +
-"- Plattenbelag stelzgelagert und hinterlüftet\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "dach|wasser|bitumen":{klasse:"DIN 18531-2",badge:"badge-high",
+    title:"Dach mit wasserführender Schicht · Bitumenbahnen",
+    subtitle:"Beflutetes Dach oder intensiv begrünt mit dauerhafter Wasserbelastung.",
+    systeme:[
+      {prim:true, name:"PYE PV 200 S5 – 2-lagig, druckwasserfest",  note:"Vollflächig verklebt, Sondersystem"},
+      {prim:false,name:"Verbundsystem Bitumen + Kunststoffbahn",      note:"Systemherstellerfreigabe für Beflutung"},
+    ],
+    checks:["Statik: Wassergewicht berücksichtigt (1 cm = 10 kg/m²)?","Druckwasserfeste Anschlüsse und Überlaufhöhen","Notüberläufe mehrfach vorsehen","Überstau-Sicherung planen"],
+    warnungen:["Beflutetes Dach: Statik und Abdichtung mit Fachplaner abstimmen!"],
+    norm:"DIN 18531-1:2017 · DIN 18531-2"},
 
-  "sockel|kurz": [
-    {
-      nr: "014.410",
-      kurz: "PMBC Sockelabdichtung – Spritzwasserzone W4-E",
-      lang:
-"Pos. 014.410\n" +
-"PMBC-Sockelabdichtung, Spritzwasserzone, W4-E\n\n" +
-"Leistung:\n" +
-"Aufbringen einer Bitumendickbeschichtung (PMBC) auf\n" +
-"die Sockelzone der Außenwand im Bereich der\n" +
-"Spritzwasserbelastung.\n\n" +
-"Ausführung nach DIN 18533-1 §4.4, W4-E.\n\n" +
-"Technische Anforderungen:\n" +
-"- Mindesthöhe: 30 cm über Geländeoberkante (GOK)\n" +
-"- PMBC 2-lagig, Schichtdicke mind. 4 mm\n" +
-"- Übergang zur Wärmedämmung abdichten\n" +
-"- Abtropfkante / Abschlussblech an Oberkante\n" +
-"- Systemkonform zur restlichen Wandabdichtung\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  // ── DIN 18532 BEFAHREN ────────────────────────────────────────────────────
+  "fahren|18532-4":{klasse:"DIN 18532-4:2025",badge:"badge-mid",
+    title:"Befahrene Fläche · Kunststoff-/Elastomerbahn",
+    subtitle:"1-lagige Kunststoff- oder Elastomerbahn nach DIN 18532-4:2025-06.",
+    systeme:[
+      {prim:true, name:"ECB / PVC-P / FPO / EPDM – 1 Lage",        note:"Bauweisen 1a, 2a, 2b · Nutzungsklassen N1-V bis N3-V · R1-V"},
+      {prim:false,name:"PIB oder TPE-Bahn",                           note:"Alternative nach DIN 18532-4, Systemherstellerfreigabe"},
+    ],
+    checks:["Nutzungsklasse N1-V / N2-V / N3-V festlegen","Rautiefenausgleich nach DIN 18532-4:2025","Unterlaufsicherheit sicherstellen (Neuregelung 2025!)","Schweißnahtprüfung: Heißluft oder Quellschweißung","Dehnfugenprofile systemkonform","Abläufe mit systemkonformem Flansch","Wärmedämmung: Bauweise 2a oder 2b wählen"],
+    warnungen:["DIN 18532-4:2025-06 – Unterlaufsicherheit ist neue Pflichtanforderung!"],
+    norm:"DIN 18532-1:2017 · DIN 18532-4:2025-06"},
 
-  "sockel|kombi": [
-    {
-      nr: "014.420",
-      kurz: "PMBC durchgehend Wand + Sockel – Kombination W4-E",
-      lang:
-"Pos. 014.420\n" +
-"PMBC Kombination Wand + Sockel, durchgehend\n\n" +
-"Leistung:\n" +
-"Aufbringen einer Bitumendickbeschichtung (PMBC) auf der\n" +
-"erdberührten Kelleraußenwand und durchgehend in die\n" +
-"Sockelzone, übergangsfrei.\n\n" +
-"Ausführung nach DIN 18533-1/2, Kombi W4-E + Wand.\n\n" +
-"Technische Anforderungen:\n" +
-"- Kein Systemwechsel im Übergangsbereich Wand/Sockel\n" +
-"- Gleiche Materialfamilie (gleicher Systemhersteller)\n" +
-"- Sockelhöhe mind. 30 cm über GOK\n" +
-"- Abtropfkante / Abschlussblech an Oberkante\n" +
-"- Übergang WD/WU-Wand systemkonform ausführen\n\n" +
-"Einheit: m²\n" +
-"Menge: ______ m²"
-    }
-  ],
+  "fahren|18532-5":{klasse:"DIN 18532-5:2025",badge:"badge-mid",
+    title:"Befahrene Fläche · Verbundsystem Bitumen + Kunststoffbahn",
+    subtitle:"Polymerbitumenbahn (unten) + Kunststoff-/Elastomerbahn (oben). DIN 18532-5:2025-06.",
+    systeme:[
+      {prim:true, name:"Verbund PYB + Kunststoffbahn",               note:"Untere Lage: Polymerbitumenbahn · Obere Lage: Kunststoffbahn"},
+      {prim:false,name:"Alternativ: reines Kunststoffbahnsystem",     note:"Wenn Bitumenunterlage nicht gewünscht → DIN 18532-4"},
+    ],
+    checks:["Nutzungsklassen N1-V bis N3-V, Rissklasse R1-V","Untergrundbehandlung nach DIN 18532-5:2025","Rautiefenausgleich vor Bahnenlage","Stöße beider Lagen versetzt mind. 30 cm","Systemherstellerfreigabe für Verbund Pflicht","Dehnfugenprofile systemkonform"],
+    warnungen:["DIN 18532-5:2025-06 – Untergrundbehandlung und Rautiefenausgleich neu präzisiert!"],
+    norm:"DIN 18532-1:2017 · DIN 18532-5:2025-06"},
 
-  "durchdringung|rohr": [
-    {
-      nr: "014.510",
-      kurz: "Rohrdurchführung mit Flanschanschluss – Abdichtungsebene",
-      lang:
-"Pos. 014.510\n" +
-"Rohrdurchführung, systemkonformer Flanschanschluss\n\n" +
-"Leistung:\n" +
-"Einbauen und Abdichten einer Rohrdurchführung durch die\n" +
-"Abdichtungsebene mittels systemzugelassenem Flanschanschluss.\n\n" +
-"Ausführung nach DIN 18533-1 §6, Systemzulassung Hersteller.\n\n" +
-"Technische Anforderungen:\n" +
-"- Flansch: systemkonform, gleicher Hersteller wie Flächenabdichtung\n" +
-"- Flansch aufschweißen oder verkleben lt. Systemfreigabe\n" +
-"- Mindestabstand Rohr zu Rohr: mind. 15 cm\n" +
-"- Bewegungsausgleich für thermische Längenänderung\n" +
-"- Optische Prüfung nach Einbau, Protokoll\n\n" +
-"Einheit: Stück\n" +
-"Menge: ______ Stk."
-    }
-  ],
+  "fahren|18532-6":{klasse:"DIN 18532-6:2025",badge:"badge-mid",
+    title:"Befahrene Fläche · Flüssigkunststoff FLK / OS-System",
+    subtitle:"Nahtlos, ideal bei Rampen, Spindeln und komplexer Geometrie. DIN 18532-6:2025-06.",
+    systeme:[
+      {prim:true, name:"FLK OS 11b – PKW/LKW befahrbar (N2-V/N3-V)",note:"PMMA oder PU, DIN 18532-6:2025"},
+      {prim:false,name:"FLK OS 11a – leicht befahrbar (N1-V/N2-V)", note:"Geringere Schichtdicke, gelegentliche Befahrung"},
+      {prim:false,name:"FLK OS 10 – Fußgänger (N1-V)",              note:"Präzisiert in DIN 18532-6:2025 · OS 8 ist GESTRICHEN"},
+    ],
+    checks:["Nutzungsklasse N1-V / N2-V / N3-V festlegen","OS-Systemvariante wählen: OS 10 / OS 11a / OS 11b","Rissklasse R1-V – Risse verpressen","Rautiefenausgleich herstellen","Schichtdicken je Lage protokollieren","Dehnfugen und Abläufe nahtlos integrieren","Aushärtungsprotokoll und Freigabe Hersteller","OS 8 ist seit 2025 GESTRICHEN – nicht mehr verwenden!"],
+    warnungen:["DIN 18532-6:2025-06: OS 8 gestrichen – bestehende Ausschreibungen anpassen!","Komplexe Geometrien: Systemherstellerfreigabe für alle Details einholen."],
+    norm:"DIN 18532-1:2017 · DIN 18532-6:2025-06"},
 
-  "durchdringung|tuer": [
-    {
-      nr: "014.520",
-      kurz: "Tür-/Fensteranschluss an Abdichtungsebene",
-      lang:
-"Pos. 014.520\n" +
-"Anschluss Tür- / Fensterrahmen an Abdichtungsebene\n\n" +
-"Leistung:\n" +
-"Herstellen eines wasserdichten Anschlusses zwischen\n" +
-"Blendrahmen und der Flächen-Abdichtungsebene mittels\n" +
-"systemkonformem Anschlussband.\n\n" +
-"Ausführung nach DIN 18533-1 §6.5, Systemdetails Hersteller.\n\n" +
-"Technische Anforderungen:\n" +
-"- Anschlussband: Hersteller-Systemprodukt, mind. 10 cm Überdeckung\n" +
-"- Rahmenunterkante: mind. 15 cm über OK Abdichtungsoberkante\n" +
-"- Keine Unterschneidung am Blendrahmen\n" +
-"- Eckausbildung mit Formteilen (kein Freihandschnitt)\n" +
-"- Türschwelle druckwasserfest\n\n" +
-"Einheit: m\n" +
-"Menge: ______ m"
-    }
-  ],
+  // ── DIN 18533 ERDBERÜHRT ──────────────────────────────────────────────────
+  "erde|wand|W1.1-E":{klasse:"W1.1-E",badge:"badge-low",
+    title:"Wand erdberührt · Bodenfeuchte",
+    subtitle:"Kein Druckwasser. Geringe Anforderung.",
+    systeme:[
+      {prim:true, name:"PMBC – Polymer-Bitumen-Dickbeschichtung",    note:"mind. 4 mm, 2 Lagen kreuzweise · DIN 18533-2 §4.2"},
+      {prim:false,name:"MDS – Mineralische Dichtungsschlämme",        note:"Bei mineralischen Untergründen"},
+    ],
+    checks:["Untergrund sauber, trocken, tragfähig","Voranstrich lt. Herstellervorgabe","Mind. 2 Lagen kreuzweise","Schichtdicke gesamt ≥ 4 mm","Kein Auftrag bei Frost oder Regen","Noppenbahn als Schutzschicht"],
+    warnungen:[],norm:"DIN 18533-1:2017 · DIN 18533-2, W1.1-E"},
 
-  "durchdringung|anschluss": [
-    {
-      nr: "014.530",
-      kurz: "Hohlkehle Wand-Boden-Anschluss – PMBC mit Gewebeeinlage",
-      lang:
-"Pos. 014.530\n" +
-"Hohlkehle am Wand-Boden-Anschluss, PMBC + Gewebeeinlage\n\n" +
-"Leistung:\n" +
-"Herstellen einer Hohlkehle am Übergang Bodenplatte /\n" +
-"aufgehende Wand aus PMBC mit Gewebeeinlage.\n\n" +
-"Ausführung nach DIN 18533-1 §6.3 / DIN 18533-2 §4.\n\n" +
-"Technische Anforderungen:\n" +
-"- Innenradius Hohlkehle: mind. 4 cm (kein rechter Winkel!)\n" +
-"- Gewebeeinlage vollflächig in Hohlkehle einbetten\n" +
-"- Reihenfolge: erst Hohlkehle, dann Fläche\n" +
-"- Fugenriss Platte/Wand: Fugenband oder Quellprofil einbauen\n" +
-"- Übergang systemkonform (gleiche Materialfamilie)\n\n" +
-"Einheit: m\n" +
-"Menge: ______ m"
-    }
-  ],
+  "erde|wand|W1.2-E":{klasse:"W1.2-E",badge:"badge-low",
+    title:"Wand erdberührt · Sickerwasser",
+    subtitle:"Zeitweise Wasseransammlung, kein Dauerdruck.",
+    systeme:[
+      {prim:true, name:"PMBC + Vlies-/Gewebeeinlage",               note:"mind. 4 mm, Gewebe an Ecken/Kehlen zwingend"},
+      {prim:false,name:"MDS – Mineralische Dichtungsschlämme",        note:"Nur bei trockenem Untergrund"},
+    ],
+    checks:["Hohlkehle Wand/Sohle: Ø 4–6 cm, kein rechter Winkel!","Gewebeeinlage an allen Kehlen","Drainageschicht (Noppenbahn + Filtervlies)","Schichtdicke gesamt ≥ 4 mm"],
+    warnungen:["Drainage zwingend – sonst Rückstau!"],norm:"DIN 18533-1:2017 · DIN 18533-2, W1.2-E"},
+
+  "erde|wand|W2.1-E":{klasse:"W2.1-E",badge:"badge-mid",
+    title:"Wand erdberührt · Drückendes Wasser ≤ 3 m",
+    subtitle:"Grundwasserdruck vorhanden. Erhöhte Ausführungsanforderungen.",
+    systeme:[
+      {prim:true, name:"PMBC gewebeverstärkt (alle Lagen)",          note:"Gewebeverstärkung Pflicht in allen Lagen"},
+      {prim:false,name:"Kunststoff- / Bitumenbahnen",                 note:"Vollflächig verklebt · DIN 18533-2 §5"},
+      {prim:false,name:"WU-Beton (Weiße Wanne)",                      note:"Alternative nach WU-Richtlinie DBV"},
+    ],
+    checks:["Hohlkehle Wand/Sohle (Ø mind. 4 cm)","Gewebeverstärkung in ALLEN Lagen Pflicht","Arbeitsfugen: Fugenband oder Quellprofil","Druckwasserfeste Verbauung während Ausführung","Schichtdicken protokollieren – Dokumentationspflicht!"],
+    warnungen:["Druckwasserlast – Protokoll Pflicht!","Baugrundgutachten prüfen."],
+    norm:"DIN 18533-1:2017 §5 · DIN 18533-2 §4, W2.1-E"},
+
+  "erde|wand|W2.2-E":{klasse:"W2.2-E",badge:"badge-high",
+    title:"Wand erdberührt · Drückendes Wasser > 3 m",
+    subtitle:"Hoher Grundwasserdruck. Fachplaner erforderlich.",
+    systeme:[
+      {prim:true, name:"Abdichtungsbahnen wannenartig vollflächig",  note:"Bitumen-Schweißbahnen oder Kunststoffbahnen"},
+      {prim:false,name:"WU-Beton (Weiße Wanne)",                      note:"Gesamtkonzept mit Tragwerksplaner"},
+    ],
+    checks:["Fachplaner (LP 5) vor Ausführungsbeginn einbinden!","Wannenanschluss lückenlos","Auftrieb statisch nachweisen","QSP erstellen","Prüfung nach jeder Lage"],
+    warnungen:["HOHES SCHADENSRISIKO – nur mit geprüftem Abdichtungsplan!"],
+    norm:"DIN 18533-1:2017 §5 · DIN 18533-2 §4, W2.2-E"},
+
+  "erde|sohle|W1.1-E":{klasse:"W1.1-E",badge:"badge-low",
+    title:"Bodenplatte · Bodenfeuchte",subtitle:"Kein Druckwasser. Einfachste Anforderung.",
+    systeme:[
+      {prim:true, name:"PMBC auf Sauberkeitsschicht",                note:"2-lagig, Aufkantung an Wand mind. 15 cm"},
+      {prim:false,name:"PE-Folie mind. 0,5 mm",                      note:"Nähte mind. 20 cm überlappen und verschweißen"},
+    ],
+    checks:["Sauberkeitsschicht mind. 5 cm","Vollständig geschlossen, keine Perforierung","Aufkantung mind. 15 cm","Keine Perforierung durch Bewehrung"],
+    warnungen:[],norm:"DIN 18533-2:2017, Sohle W1.1-E"},
+
+  "erde|sohle|W1.2-E":{klasse:"W1.2-E",badge:"badge-low",
+    title:"Bodenplatte · Sickerwasser",subtitle:"Zeitweise Feuchtebelastung von unten.",
+    systeme:[
+      {prim:true, name:"PMBC 2-lagig mit Vlieseinlage",              note:"Schichtdicke mind. 4 mm"},
+      {prim:false,name:"Bitumenbahn 1-lagig (mind. R 500)",           note:"Nähte mind. 10 cm überlappen"},
+    ],
+    checks:["Hohlkehle Sohle/Wand Ø 4–6 cm","Nahtüberlappungen mind. 10 cm, versetzt","Drainage vorsehen","Aufkantung mind. 15 cm"],
+    warnungen:[],norm:"DIN 18533-2:2017, Sohle W1.2-E"},
+
+  "erde|sohle|W2.1-E":{klasse:"W2.1-E",badge:"badge-mid",
+    title:"Bodenplatte · Drückendes Wasser ≤ 3 m",subtitle:"Auftrieb statisch prüfen!",
+    systeme:[
+      {prim:true, name:"Bitumen-Schweißbahnen 2-lagig",              note:"Vollflächig verklebt, Nähte mind. 10 cm"},
+      {prim:false,name:"WU-Beton (Weiße Wanne)",                      note:"Nach DBV WU-Richtlinie"},
+    ],
+    checks:["Auftriebsnachweis – Tragwerksplaner einbinden!","Aufkantung durchgehend bis Abdichtungsebene","Dehnfuge / Fugenband an Anschlussbereichen"],
+    warnungen:["Auftriebsgefahr – Nachweis VOR Ausführung!"],norm:"DIN 18533-2:2017, Sohle W2.1-E"},
+
+  "erde|sohle|W2.2-E":{klasse:"W2.2-E",badge:"badge-high",
+    title:"Bodenplatte · Drückendes Wasser > 3 m",subtitle:"Höchste Anforderungen.",
+    systeme:[
+      {prim:true, name:"Wannensystem Schwarze Wanne",                note:"Vollständig geschlossene Wanne"},
+      {prim:false,name:"WU-Beton (Weiße Wanne)",                      note:"Nur mit geprüftem WU-Konzept und QSP"},
+    ],
+    checks:["Fachplanung LP 5 zwingend","Baugrundgutachten aktuell?","Auftriebssicherung nachgewiesen?","QSP erstellt?"],
+    warnungen:["FACHPLANER + PRÜFINGENIEUR einschalten!"],norm:"DIN 18533-1/2:2017, W2.2-E"},
+
+  "erde|sockel|kurz":{klasse:"W4-E",badge:"badge-low",
+    title:"Sockel · Spritzwasserzone",subtitle:"Spritzwasser und Schlagregen.",
+    systeme:[
+      {prim:true, name:"PMBC 2-lagig",                               note:"Mindesthöhe mind. 30 cm über GOK"},
+      {prim:false,name:"MDS + Zementputz",                            note:"Nur bei trockenem Standort"},
+    ],
+    checks:["Mind. 30 cm über GOK","Übergang WD/Dämmung abdichten","Abtropfkante vorsehen"],
+    warnungen:[],norm:"DIN 18533-1:2017 §4.4, W4-E"},
+
+  "erde|sockel|kombi":{klasse:"W4-E+Wand",badge:"badge-mid",
+    title:"Sockel + Erdberührte Wand (Kombination)",subtitle:"Durchgehend aus einem System.",
+    systeme:[
+      {prim:true, name:"PMBC durchgehend (Wand + Sockel)",           note:"Übergangsloses System, mind. 30 cm ü. GOK"},
+      {prim:false,name:"Bitumenbahn ab Sohle bis Sockelabschluss",   note:"Systemkonformer Übergang"},
+    ],
+    checks:["Kein Systemwechsel im Übergang","Gleiche Materialfamilie","Abtropfkante planen","30 cm über GOK einhalten"],
+    warnungen:["Übergang Sockel/Wand = kritische Fehlstellenzone!"],norm:"DIN 18533-1/2:2017, Kombi"},
+
+  "erde|durchdringung|rohr":{klasse:"Sonderdetail",badge:"badge-mid",
+    title:"Durchdringung · Rohr / Leerrohr",subtitle:"Häufigste Leckagequelle.",
+    systeme:[
+      {prim:true, name:"Flanschanschluss systemzugelassen",          note:"Gleicher Systemgeber wie Fläche"},
+      {prim:false,name:"Manschette mit Klemmring",                    note:"Nur bei W1-Klassen"},
+    ],
+    checks:["Flansch systemkonform?","Mindestabstand mind. 15 cm","Bewegungsausgleich beachten","Optische Prüfung nach Einbau"],
+    warnungen:["Durchdringungen = häufigste Leckagequelle – Fachbetrieb!"],norm:"DIN 18533-1:2017 §6"},
+
+  "erde|durchdringung|tuer":{klasse:"Sonderdetail",badge:"badge-mid",
+    title:"Anschluss Tür / Fenster",subtitle:"Häufigste Leckage-Stelle im Keller!",
+    systeme:[
+      {prim:true, name:"Anschlussband + PMBC-Anbindung",            note:"Mind. 10 cm Überdeckung in Fläche"},
+      {prim:false,name:"Manschettenband in PMBC",                    note:"Mind. 10 cm Überlappung, Eckformteile"},
+    ],
+    checks:["Rahmenunterkante mind. 15 cm über Abdichtungsoberkante","Keine Unterschneidung","Türschwelle druckwasserfest?","Eckausbildung mit Formteilen"],
+    warnungen:["Türanschluss = häufigste Leckage – besondere Sorgfalt!"],norm:"DIN 18533-1:2017 §6.5"},
+
+  "erde|durchdringung|anschluss":{klasse:"Sonderdetail",badge:"badge-mid",
+    title:"Wand-Boden-Anschluss / Hohlkehle",subtitle:"Ohne Hohlkehle keine dichte Abdichtung.",
+    systeme:[
+      {prim:true, name:"Hohlkehle + PMBC durchgehend",              note:"Innenradius mind. 4 cm, Gewebeeinlage Pflicht"},
+      {prim:false,name:"Fugenband + Bahn durchgehend",               note:"Kehle vorformen, gleiche Materialfamilie"},
+    ],
+    checks:["Hohlkehle Ø 4–6 cm – KEIN rechter Winkel!","Gewebeeinlage zuerst","PMBC: erst Kehle dann Fläche","Fugenriss → Fugenband/Quellprofil"],
+    warnungen:["Ohne Hohlkehle = Fehlstelle vorprogrammiert!"],norm:"DIN 18533-1:2017 §6.3"},
+
+  // ── DIN 18534 INNENRAUM ───────────────────────────────────────────────────
+  "innen|A1|bahn":{klasse:"DIN 18534-2 / A1",badge:"badge-low",
+    title:"Nassraum A1 · Bahnenabdichtung",
+    subtitle:"Gelegentliches Spritzwasser. Kunststoffbahn oder Bitumenbahn im Verbund mit Fliesen.",
+    systeme:[
+      {prim:true, name:"Kunststoffbahn im Verbund (DIN 18534-2)",   note:"Vollflächig verklebt, Fliesen auf Bahn"},
+      {prim:false,name:"Bitumenbahn im Verbund",                     note:"Nur bei ausreichender Untergrundtragfähigkeit"},
+    ],
+    checks:["Untergrund eben, fest, trocken (CM-Wert ≤ 2,0 %)","Bahnen vollflächig verkleben","Ecken und Kehlen mit Formteilen","Anschluss Wand/Boden wasserdicht","Fliesen auf Abdichtung – Haftzug prüfen"],
+    warnungen:[],norm:"DIN 18534-1:2017 · DIN 18534-2:2017, A1"},
+
+  "innen|A1|fluessig":{klasse:"DIN 18534-3 / A1",badge:"badge-low",
+    title:"Nassraum A1 · Flüssigabdichtung (FLK)",
+    subtitle:"Gelegentliches Spritzwasser. PMMA oder PU nahtlos.",
+    systeme:[
+      {prim:true, name:"Flüssigabdichtung PMMA/PU (DIN 18534-3)",  note:"Nahtlos, Ecken und Kehlen systemkonform"},
+      {prim:false,name:"Reaktionsharz-Beschichtung EP",              note:"Chemisch beständig, Systemherstellerfreigabe"},
+    ],
+    checks:["CM-Wert Untergrund ≤ 2,0 %","Ecken und Kehlen nahtlos ausführen","Schichtdicke nach Systemvorgabe","Fliesen auf Abdichtung: Haftungsfreigabe Hersteller"],
+    warnungen:[],norm:"DIN 18534-1:2017 · DIN 18534-3:2017, A1"},
+
+  "innen|A1|maeba":{klasse:"DIN 18534-4 / A1",badge:"badge-low",
+    title:"Nassraum A1 · Verbundabdichtung (MÄBA)",
+    subtitle:"Bauwerksabdichtung im Verbund mit Keramik. Gelegentliches Spritzwasser.",
+    systeme:[
+      {prim:true, name:"MÄBA – Verbundabdichtung unter Fliesen",    note:"DIN 18534-4, SystemherstellerFreigabe, Dichtband an Ecken"},
+      {prim:false,name:"Fliesenkleber mit Abdichtungsfunktion",       note:"Nur A1, Herstellernachweis erforderlich"},
+    ],
+    checks:["Untergrund eben und sauber (CM ≤ 2,0 %)","Dichtband / Dichtecke an Wand-Boden-Übergang","Abdichtungsmasse 2-lagig auftragen","Trocknungszeit vor Verfliesung einhalten","Fugen elastisch verfugen (Silikonfuge)"],
+    warnungen:[],norm:"DIN 18534-1:2017 · DIN 18534-4:2017, A1"},
+
+  "innen|A2|bahn":{klasse:"DIN 18534-2 / A2",badge:"badge-mid",
+    title:"Nassraum A2 · Bahnenabdichtung (dauernass)",
+    subtitle:"Duschbereich, dauernde Wasserbelastung.",
+    systeme:[
+      {prim:true, name:"Kunststoffbahn A2 (DIN 18534-2)",           note:"Vollflächig verklebt, Formteile an Ecken/Kehlen Pflicht"},
+      {prim:false,name:"Bitumenbahn A2",                             note:"Systemherstellerfreigabe für Nassbereich A2"},
+    ],
+    checks:["CM-Wert Untergrund ≤ 2,0 %","Formteile an Ecken, Kehlen, Durchdringungen","Bahnen vollflächig verkleben, keine Hohlstellen","Anschlusshöhe Wand mind. 15 cm über OKFF","Entwässerung: Ablauf wasserdicht einbinden","Fugendicht elastisch verfugen"],
+    warnungen:["Beanspruchungsklasse A2 – kein Sparen bei Formteilen!"],
+    norm:"DIN 18534-1:2017 · DIN 18534-2:2017, A2"},
+
+  "innen|A2|fluessig":{klasse:"DIN 18534-3 / A2",badge:"badge-mid",
+    title:"Nassraum A2 · Flüssigabdichtung (dauernass)",
+    subtitle:"Duschbereich – nahtlose Flüssigabdichtung, ideal bei komplexen Grundrissen.",
+    systeme:[
+      {prim:true, name:"FLK PMMA 2-lagig mit Vlies (DIN 18534-3)", note:"Ecken und Kehlen nahtlos integriert"},
+      {prim:false,name:"PU-Abdichtung 2-lagig",                      note:"Systemherstellerfreigabe A2"},
+    ],
+    checks:["CM-Wert ≤ 2,0 %","Schichtdicke nach Systemspezifikation mind. 1,0 mm","Ecken und Kehlen mit FLK nahtlos ausführen","Ablauf systemkonform einbinden","Trocknungs-/Aushärtezeit vor Verfliesung"],
+    warnungen:[],norm:"DIN 18534-1:2017 · DIN 18534-3:2017, A2"},
+
+  "innen|A2|maeba":{klasse:"DIN 18534-4 / A2",badge:"badge-mid",
+    title:"Nassraum A2 · Verbundabdichtung MÄBA (dauernass)",
+    subtitle:"MÄBA unter Fliesen in Duschbereichen.",
+    systeme:[
+      {prim:true, name:"MÄBA 2-lagig mit Dichtband, A2 (DIN 18534-4)", note:"Dichtband an Ecken, Kehlen und Durchdringungen Pflicht"},
+      {prim:false,name:"Reaktionsharz-Abdichtung",                       note:"Systemherstellerfreigabe A2"},
+    ],
+    checks:["CM-Wert ≤ 2,0 %","2-lagige Abdichtungsmasse","Dichtband an ALLEN Ecken, Kehlen, Anschlüssen","Anschlusshöhe mind. 15 cm","Ablauf systemkonform einbinden","Elastische Fugen (Silikon) an Anschlüssen"],
+    warnungen:["A2: Dichtband an jeder Kehle Pflicht – kein Freilassen!"],
+    norm:"DIN 18534-1:2017 · DIN 18534-4:2017, A2"},
+
+  "innen|A3|bahn":{klasse:"DIN 18534-2 / A3",badge:"badge-high",
+    title:"Becken / Schwimmbad · Bahnenabdichtung (Dauerbeflutung)",
+    subtitle:"Dauerhaft wasserbeaufschlagt. Höchste Anforderungen nach DIN 18534.",
+    systeme:[
+      {prim:true, name:"Kunststoffbahn A3 (DIN 18534-2)",           note:"Vollflächig verklebt, druckwasserfest, alle Nähte geprüft"},
+      {prim:false,name:"Spezielle Folie für Schwimmbecken",          note:"Systemherstellerfreigabe A3, inkl. Schweißnahtprüfung"},
+    ],
+    checks:["Statik: Wasserdruck und Auftrieb berücksichtigt?","Alle Nähte geprüft (Vakuum oder Luftkanal)","Beckendurchdringungen mit systemzugelassenem Flansch","Dehnfugen systemkonform ausführen","Anschlusshöhe mind. 30 cm über maximalen Wasserstand"],
+    warnungen:["Dauerbeflutung A3 – Fachplaner einbinden, Schweißnahtprüfprotokoll Pflicht!"],
+    norm:"DIN 18534-1:2017 · DIN 18534-2:2017, A3"},
+
+  "innen|A3|fluessig":{klasse:"DIN 18534-3 / A3",badge:"badge-high",
+    title:"Becken / Schwimmbad · Flüssigabdichtung (Dauerbeflutung)",
+    subtitle:"Nahtlos und druckwasserfest. FLK für Beckenkonstruktionen.",
+    systeme:[
+      {prim:true, name:"FLK EP oder PU 2-lagig, druckwasserfest",  note:"Gesamtschichtdicke nach Systemvorgabe, A3"},
+      {prim:false,name:"Epoxidharz-Beschichtung",                    note:"Chemisch beständig, Systemherstellerfreigabe A3"},
+    ],
+    checks:["Wasserdruck und Auftrieb statisch nachgewiesen?","Schichtdicke nach Systemvorgabe (mind. 2 mm)","Alle Anschlüsse nahtlos","Aushärtungsprotokoll vor Befüllung","Prüfung durch Fachbetrieb"],
+    warnungen:["Dauerbeflutung A3 – Fachplaner und geprüftes System Pflicht!"],
+    norm:"DIN 18534-1:2017 · DIN 18534-3:2017, A3"},
+
+  "innen|A3|maeba":{klasse:"DIN 18534-4 / A3",badge:"badge-high",
+    title:"Becken · Verbundabdichtung MÄBA (Dauerbeflutung)",
+    subtitle:"MÄBA unter Fliesen in Beckenkonstruktionen. Nur geprüfte Systeme.",
+    systeme:[
+      {prim:true, name:"MÄBA 2-lagig A3 unter Fliesen (DIN 18534-4)", note:"Systemherstellerfreigabe A3, Schweißnahtprüfung"},
+      {prim:false,name:"Spezialbeschichtung Becken EP/PU",              note:"Systemherstellerfreigabe A3"},
+    ],
+    checks:["Systemherstellerfreigabe A3 vorliegen?","2-lagige Abdichtung vollflächig","Alle Nähte und Ecken systemkonform","Fliesen: Haftzugprüfung im Becken","Elastische Dehnfugen einplanen"],
+    warnungen:["A3 Becken – nur systemzugelassene MÄBA, kein Improvisation!"],
+    norm:"DIN 18534-1:2017 · DIN 18534-4:2017, A3"},
+
+  // ── DIN 18535 BEHÄLTER ────────────────────────────────────────────────────
+  "behaelter|trink|mineral":{klasse:"DIN 18535-2",badge:"badge-high",
+    title:"Trinkwasserbehälter · Zementgebundene Abdichtung",
+    subtitle:"Trinkwasserverträglichkeit zwingend. DIN 18535-1 und -2.",
+    systeme:[
+      {prim:true, name:"KS-Beschichtung trinkwasserverträglich (DIN 18535-2)", note:"Zulassung nach KTW-Leitlinie / UBA Positivliste Pflicht"},
+      {prim:false,name:"MDS trinkwasserverträglich",                            note:"Systemzulassung für Trinkwasserkontakt"},
+    ],
+    checks:["KTW-Zulassung / UBA Positivliste des Systems vorliegend?","Untergrund: Betonalterung mind. 28 Tage","Risse ≤ 0,2 mm: schließen oder verpressen","Innen- und Außenabdichtung aufeinander abstimmen","Lüftungsöffnungen abdichten","Nach Einbau: Spülen und Trinkwasseranalyse"],
+    warnungen:["TRINKWASSER – nur KTW-zugelassene Systeme verwenden!","Keine Standardabdichtung – immer Systemzulassung prüfen!"],
+    norm:"DIN 18535-1:2017 · DIN 18535-2:2017 · KTW-Leitlinie"},
+
+  "behaelter|trink|kunst":{klasse:"DIN 18535-3",badge:"badge-high",
+    title:"Trinkwasserbehälter · Kunststoffbeschichtung",
+    subtitle:"Epoxid oder PU – trinkwasserverträglich zugelassen.",
+    systeme:[
+      {prim:true, name:"EP-Beschichtung trinkwasserverträglich (DIN 18535-3)", note:"KTW-/DVGW-Zulassung Pflicht"},
+      {prim:false,name:"PU-Beschichtung trinkwasserverträglich",                note:"Systemzulassung Trinkwasserkontakt"},
+    ],
+    checks:["KTW-Zulassung des Beschichtungssystems vorliegend?","Untergrund: fest, trocken, ölfrei","Schichtdicke nach Systemvorgabe (meist ≥ 0,5 mm EP)","Aushärtungsprotokoll und Wartezeit vor Befüllung","Spülen und Trinkwasseranalyse nach Einbau"],
+    warnungen:["TRINKWASSER – KTW-Zulassung Pflicht, kein Standardsystem!"],
+    norm:"DIN 18535-1:2017 · DIN 18535-3:2017 · KTW-Leitlinie"},
+
+  "behaelter|abwasser|mineral":{klasse:"DIN 18535-2",badge:"badge-mid",
+    title:"Abwasserbauwerk · Zementgebundene Abdichtung",
+    subtitle:"Kanäle, Kläranlagen – chemisch und mechanisch beansprucht.",
+    systeme:[
+      {prim:true, name:"Polymer-Zement-Beschichtung (PCC) (DIN 18535-2)", note:"Sulfatbeständig, rissüberbrückend"},
+      {prim:false,name:"MDS sulfatbeständig",                               note:"Bei geringerer Beanspruchung"},
+    ],
+    checks:["Chemische Beständigkeit der Beschichtung nachgewiesen?","Untergrundvorbereitung: Strahlreinigung","Risse verpressen oder flexibel überbrücken","Schichtdicke nach Angriffsintensität","Nahtlose Ausführung – keine Unterbrechungen"],
+    warnungen:["Abwasser: pH-Wert und chemische Zusammensetzung prüfen!"],
+    norm:"DIN 18535-1:2017 · DIN 18535-2:2017"},
+
+  "behaelter|abwasser|kunst":{klasse:"DIN 18535-3",badge:"badge-mid",
+    title:"Abwasserbauwerk · Kunststoffbeschichtung",
+    subtitle:"EP oder PU – chemisch beständig für Abwasser.",
+    systeme:[
+      {prim:true, name:"EP-Beschichtung chemisch beständig (DIN 18535-3)", note:"Schichtdicke nach Angriffsintensität"},
+      {prim:false,name:"PU-Beschichtung flexibel",                           note:"Bei Rissüberbrückung erforderlich"},
+    ],
+    checks:["Beständigkeitsnachweis gegen Abwasserinhaltsstoffe","Untergrundvorbereitung: Strahlreinigung Sa 2,5","Schichtdicke nach Systemvorgabe (mind. 1,5 mm)","Schweißnahtprüfung aller Nähte","Aushärtungsprotokoll vor Inbetriebnahme"],
+    warnungen:["Abwasser chemisch aggressiv – Beständigkeitsnachweis Pflicht!"],
+    norm:"DIN 18535-1:2017 · DIN 18535-3:2017"},
+
+  "behaelter|industrie|mineral":{klasse:"DIN 18535-2",badge:"badge-high",
+    title:"Industriebehälter · Zementgebundene Abdichtung",
+    subtitle:"Hohe chemische, thermische oder mechanische Beanspruchung.",
+    systeme:[
+      {prim:true, name:"Hochleistungs-PCC mit Reaktionsharz-Deckschicht", note:"PCC Grundbeschichtung + EP/PU-Deckschicht"},
+      {prim:false,name:"Sulfatbeständige Zementmörtel-Beschichtung",       note:"Nur bei geringerer Angriffsintensität"},
+    ],
+    checks:["Chemische Analyse der Lagerflüssigkeit","Temperaturbeständigkeit des Systems nachgewiesen?","Mechanische Belastung (Abrieb, Stoß) berücksichtigt?","Fachplaner für Chemikalienschutz einbinden","QSP und Abnahmeprotokoll"],
+    warnungen:["Industriebehälter – immer Fachplaner und Systemspezifikation!"],
+    norm:"DIN 18535-1:2017 · DIN 18535-2:2017"},
+
+  "behaelter|industrie|kunst":{klasse:"DIN 18535-3",badge:"badge-high",
+    title:"Industriebehälter · Kunststoffbeschichtung",
+    subtitle:"Epoxid, PU oder Vinylester – hoch chemisch beständig.",
+    systeme:[
+      {prim:true, name:"Vinylester- oder EP-Beschichtung (DIN 18535-3)", note:"Höchste chemische Beständigkeit"},
+      {prim:false,name:"Glasfaser-verstärkte EP-Beschichtung (GFK)",      note:"Bei mechanisch hoher Beanspruchung"},
+    ],
+    checks:["Beständigkeitsliste für Lagerflüssigkeit prüfen","Schichtdicke nach Angriffsklasse (mind. 2,0 mm)","Strahlreinigung Sa 2,5 / Rautiefe Ry5 ≥ 50 µm","Schweißnahtprüfung 100 %","Aushärtungsprotokoll, Temperaturführung prüfen"],
+    warnungen:["Industriebehälter chemisch – Fachingenieur und Beständigkeitsnachweis Pflicht!"],
+    norm:"DIN 18535-1:2017 · DIN 18535-3:2017"},
+
+  "behaelter|regen|mineral":{klasse:"DIN 18535-2",badge:"badge-low",
+    title:"Regen-/Löschwasserbecken · Zementgebundene Abdichtung",
+    subtitle:"Rückhaltebecken, Zisternen – einfachere Anforderungen.",
+    systeme:[
+      {prim:true, name:"PCC-Beschichtung wasserundurchlässig (DIN 18535-2)", note:"2-lagig, Nähte und Ecken sorgfältig ausführen"},
+      {prim:false,name:"WU-Beton nach DBV-Richtlinie",                        note:"Bei monolithischen Beckenwänden"},
+    ],
+    checks:["Untergrundvorbereitung: sauber, tragfähig","Ecken und Kehlen mit Dichtband oder FLK","Risse ≤ 0,2 mm: verpressen","Schichtdicke mind. 2-lagig ≥ 3 mm","Wasserdruckprüfung nach DIN EN 1610"],
+    warnungen:[],norm:"DIN 18535-1:2017 · DIN 18535-2:2017"},
+
+  "behaelter|regen|kunst":{klasse:"DIN 18535-3",badge:"badge-low",
+    title:"Regen-/Löschwasserbecken · Kunststoffbeschichtung",
+    subtitle:"Epoxid oder PU – dicht und beständig.",
+    systeme:[
+      {prim:true, name:"EP-Beschichtung wasserundurchlässig (DIN 18535-3)", note:"2-lagig, Schichtdicke mind. 1,0 mm"},
+      {prim:false,name:"PU-Beschichtung flexibel",                            note:"Bei Rissüberbrückung erforderlich"},
+    ],
+    checks:["Untergrund: trocken, ölfrei, fest","Schichtdicke mind. 1,0 mm","Ecken nahtlos ausführen","Wasserdruckprüfung nach Einbau"],
+    warnungen:[],norm:"DIN 18535-1:2017 · DIN 18535-3:2017"},
 };
 
-// ─── Navigation ───────────────────────────────────────────────────────────────
-function chooseOption(idx) {
-  var step = TREE[currentStep];
-  var opt  = step.options[idx];
-  if (opt.key && opt.ans !== undefined && opt.ans !== null) {
-    answers[opt.key] = opt.ans;
+// ═══════════════════════════════════════════════════════════════════════════════
+// KEY BUILDER
+// ═══════════════════════════════════════════════════════════════════════════════
+function buildKey(){
+  var b=answers.bereich||"";
+  if(b==="dach"){
+    return "dach|"+(answers.dachtyp||"")+("|")+(answers.dachsys||"");
   }
-  navStack.push({ stepKey: currentStep, answers: JSON.parse(JSON.stringify(answers)), crumb: opt.label });
-  currentStep = opt.next;
+  if(b==="fahren"){
+    return "fahren|"+(answers.sys18532||"");
+  }
+  if(b==="erde"){
+    var eb=answers.erdbaut||"";
+    if(eb==="wand"||eb==="sohle") return "erde|"+eb+"|"+(answers.wasser||"");
+    if(eb==="sockel")             return "erde|sockel|"+(answers.sockel||"");
+    if(eb==="durchdringung")      return "erde|durchdringung|"+(answers.dg||"");
+  }
+  if(b==="innen"){
+    return "innen|"+(answers.bkl||"")+("|")+(answers.innensys||"");
+  }
+  if(b==="behaelter"){
+    return "behaelter|"+(answers.beh||"")+("|")+(answers.behsys||"");
+  }
+  return "";
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// StLB TEXTE (Auswahl der wichtigsten Positionen)
+// ═══════════════════════════════════════════════════════════════════════════════
+var STLB={
+  "dach|warm_nb|bitumen":[{nr:"016.110",kurz:"Bitumen-Schweißbahn Flachdach – DIN 18531-2",lang:"Pos. 016.110\nPolymerbitumen-Schweißbahn, 2-lagig, Warmdach\nnach DIN 18531-2:2017\n\nLeistung:\nVerlegen und Verschweißen von Polymerbitumen-Schweißbahnen\nals Dachabdichtung auf dem Warmdach-Aufbau, 2-lagig.\n\nTechnische Anforderungen:\n- Unterlage: Dampfsperre auf Tragkonstruktion\n- Wärmedämmung: nach Wärmeschutznachweis\n- Unterlage Abdichtung: Bitumenbahn als Ausgleichsschicht\n- Oberlage: PYE PV 200 S5, mind. 5 mm\n- Gefälle: mind. 2,0 % (DIN 18531-1 §5.3)\n- Stöße: 2-lagig versetzt, mind. 30 cm\n- Anschlüsse: mind. 15 cm über OK Belag\n- Notüberläufe: eingebaut und freigehalten\n\nEinheit: m²\nMenge: ______ m²"}],
+  "dach|begeh|fluessig":[{nr:"016.140",kurz:"Flüssigabdichtung PMMA Dachterrasse – DIN 18531-4",lang:"Pos. 016.140\nFlüssigabdichtung (FLK) PMMA, begehbare Terrasse\nnach DIN 18531-4:2017\n\nLeistung:\nAufbringen einer PMMA-Flüssigabdichtung 2-lagig\nmit Vlieseinlage auf begehbarer Dachterrasse.\n\nTechnische Anforderungen:\n- Untergrundprüfung: CM-Wert, Haftzug, Risse\n- Vlieseinlage vollflächig in Erstlage\n- Schichtdicke nach Systemspezifikation\n- Gefälle mind. 1,5 %\n- Sockelhöhe mind. 15 cm über OK Belag\n- Schutzlage vor Plattenarbeiten\n- Aushärtungsprotokoll vor Begehung\n\nEinheit: m²\nMenge: ______ m²"}],
+  "dach|gruen|bitumen":[{nr:"016.150",kurz:"Bitumenbahn wurzelfest Gründach – DIN 18531-2 / FLL",lang:"Pos. 016.150\nWurzelfeste Polymerbitumen-Schweißbahn, Gründach\nnach DIN 18531-2:2017 / FLL-Richtlinie\n\nLeistung:\nVerlegen und Verschweißen einer wurzelfesten\nBitumenbahn als Abdichtung unter Gründachaufbau.\n\nTechnische Anforderungen:\n- FLL-Zulassung: Systemnachweis des Herstellers vorliegend\n- 2-lagig, Stöße versetzt mind. 30 cm\n- Gefälle mind. 1,5 %\n- Schutzmatte über gesamter Abdichtungsfläche\n- Drainageschicht + Filtervlies\n- Notüberläufe zwingend einbauen\n\nEinheit: m²\nMenge: ______ m²"}],
+  "fahren|18532-6":[{nr:"016.360",kurz:"FLK OS 11b befahrbar – DIN 18532-6:2025-06",lang:"Pos. 016.360\nFlüssigkunststoff OS 11b, befahrbar\nnach DIN 18532-6:2025-06\n\nLeistung:\nAufbringen eines Flüssigkunststoff-Abdichtungssystems\n(OS 11b) auf der befahrbaren Fläche.\n\nSystemvariante:\n[ ] OS 10   – Fußgänger/leicht (N1-V)\n[ ] OS 11a  – leicht PKW (N1-V/N2-V)\n[ ] OS 11b  – PKW/LKW (N2-V/N3-V)\n\nTechnische Anforderungen:\n- Rissklasse R1-V\n- Rautiefenausgleich vor Systemauftrag\n- Schichtdicken je Lage protokollieren\n- Dehnfugen nahtlos integriert\n- Aushärtungsprotokoll und Herstellerfreigabe\n- HINWEIS: OS 8 ist seit 2025 GESTRICHEN\n\nEinheit: m²\nMenge: ______ m²"}],
+  "fahren|18532-4":[{nr:"016.340",kurz:"Kunststoffbahn befahrbar – DIN 18532-4:2025-06",lang:"Pos. 016.340\nKunststoff-/Elastomerbahn, 1-lagig, befahrbar\nnach DIN 18532-4:2025-06\n\nLeistung:\nVerlegen und Verschweißen einer Kunststoff-\noder Elastomerbahn auf der befahrbaren Fläche.\n\nTechnische Anforderungen:\n- Bahnentyp: ECB / PVC-P / FPO / EPDM\n- Bauweise: 1a, 2a oder 2b\n- Nutzungsklasse: N1-V / N2-V / N3-V\n- Rautiefenausgleich\n- Unterlaufsicherheit (Neuregelung 2025!)\n- Schweißnahtprüfung\n- Dehnfugen systemkonform\n\nEinheit: m²\nMenge: ______ m²"}],
+  "fahren|18532-5":[{nr:"016.350",kurz:"Verbundsystem Bitumen+Kunststoffbahn – DIN 18532-5:2025",lang:"Pos. 016.350\nVerbundsystem Polymerbitumenbahn + Kunststoffbahn\nnach DIN 18532-5:2025-06\n\nLeistung:\nVerlegen eines Verbundabdichtungssystems aus\nPolymerbitumenbahn (unten) und Kunststoffbahn (oben).\n\nTechnische Anforderungen:\n- Untere Lage: Polymerbitumenbahn PYE PV 200 S4\n- Obere Lage: Kunststoff-/Elastomerbahn nach System\n- Stöße versetzt mind. 30 cm\n- Rautiefenausgleich\n- Systemherstellerfreigabe für Verbund Pflicht\n- Dehnfugen systemkonform\n\nEinheit: m²\nMenge: ______ m²"}],
+  "erde|wand|W1.1-E":[{nr:"014.110",kurz:"PMBC Kelleraußenwand W1.1-E – DIN 18533",lang:"Pos. 014.110\nBitumendickbeschichtung PMBC, Kelleraußenwand W1.1-E\nnach DIN 18533-2:2017\n\nLeistung:\nAufbringen einer PMBC auf die erdberührte Wand, 2-lagig.\n\nTechnische Anforderungen:\n- Mindest-Trockenfilmdicke: 4,0 mm\n- 2 Lagen kreuzweise\n- Voranstrich lt. Herstellervorgabe\n- Untergrund trocken und tragfähig\n- Kein Auftrag bei Frost oder Regen\n- Noppenbahn als Schutzschicht\n\nEinheit: m²\nMenge: ______ m²"},{nr:"014.115",kurz:"Noppenbahn Schutzschicht auf PMBC",lang:"Pos. 014.115\nSchutzlage Noppenbahn auf Abdichtung\n\nLeistung:\nLiefern und Verlegen einer Noppenbahn als Schutzschicht.\n\nTechnische Anforderungen:\n- HDPE-Noppenbahn, Noppenhöhe mind. 8 mm\n- Überlappung mind. 10 cm\n- Befestigung am Wandkopf mit Klemmschiene\n- Filtervlies mind. 200 g/m² kaschiert\n\nEinheit: m²\nMenge: ______ m²"}],
+  "erde|wand|W2.1-E":[{nr:"014.130",kurz:"PMBC gewebeverstärkt W2.1-E – DIN 18533",lang:"Pos. 014.130\nPMBC vollgewebeverstärkt, W2.1-E\nnach DIN 18533-2:2017\n\nLeistung:\nAufbringen einer vollgewebeverstärkten PMBC\nauf die Kelleraußenwand.\n\nTechnische Anforderungen:\n- Gewebeverstärkung in ALLEN Lagen Pflicht\n- Vlies: mind. 200 g/m² Polyestervlies\n- Schichtdicke nach Systemhersteller\n- Arbeitsfugen: Fugenband oder Quellprofil\n- Schichtdicken protokollieren (Pflicht!)\n\nEinheit: m²\nMenge: ______ m²"}],
+  "innen|A2|maeba":[{nr:"017.210",kurz:"MÄBA Verbundabdichtung Dusche A2 – DIN 18534-4",lang:"Pos. 017.210\nVerbundabdichtung MÄBA, Beanspruchungsklasse A2\nnach DIN 18534-4:2017\n\nLeistung:\nAufbringen einer Verbundabdichtung (MÄBA) unter Fliesen\nim Duschbereich, 2-lagig, mit Dichtband.\n\nTechnische Anforderungen:\n- Untergrund: CM-Wert ≤ 2,0 %, eben, fest\n- Abdichtungsmasse 2-lagig auftragen\n- Dichtband an ALLEN Kehlen, Ecken, Anschlüssen\n- Anschlusshöhe Wand mind. 15 cm über OKFF\n- Ablauf systemkonform einbinden\n- Trocknungszeit vor Verfliesung einhalten\n- Elastische Silikonfugen an Anschlüssen\n\nEinheit: m²\nMenge: ______ m²"}],
+  "innen|A3|fluessig":[{nr:"017.310",kurz:"FLK EP Schwimmbecken A3 – DIN 18534-3",lang:"Pos. 017.310\nFlüssigabdichtung EP, Schwimmbad/Becken A3\nnach DIN 18534-3:2017\n\nLeistung:\nAufbringen einer EP-Flüssigabdichtung 2-lagig\nauf Beckenwände und -boden.\n\nTechnische Anforderungen:\n- Schichtdicke nach Systemvorgabe mind. 2 mm\n- Alle Anschlüsse nahtlos\n- Wasserdruck und Auftrieb: statisch nachgewiesen\n- Aushärtungsprotokoll vor Befüllung\n- Prüfung durch Fachbetrieb\n\nEinheit: m²\nMenge: ______ m²"}],
+  "behaelter|trink|mineral":[{nr:"018.110",kurz:"KS-Beschichtung Trinkwasserbehälter – DIN 18535-2",lang:"Pos. 018.110\nZementgebundene Abdichtung Trinkwasserbehälter\nnach DIN 18535-2:2017\n\nLeistung:\nAufbringen einer KS-Beschichtung, trinkwasserverträglich,\nauf Wände und Boden des Trinkwasserbehälters.\n\nTechnische Anforderungen:\n- KTW-Zulassung / UBA Positivliste: Pflicht!\n- Untergrund: Betonalterung mind. 28 Tage\n- Risse ≤ 0,2 mm: schließen\n- 2-lagig auftragen\n- Lüftungsöffnungen abdichten\n- Spülen und Trinkwasseranalyse nach Einbau\n\nEinheit: m²\nMenge: ______ m²"}],
+  "behaelter|abwasser|kunst":[{nr:"018.210",kurz:"EP-Beschichtung Abwasserbauwerk – DIN 18535-3",lang:"Pos. 018.210\nKunststoffbeschichtung EP, Abwasserbauwerk\nnach DIN 18535-3:2017\n\nLeistung:\nAufbringen einer EP-Beschichtung, chemisch beständig,\nauf Wände und Boden des Abwasserbauwerks.\n\nTechnische Anforderungen:\n- Beständigkeitsnachweis gegen Abwasserinhaltsstoffe\n- Untergrundvorbereitung: Strahlreinigung Sa 2,5\n- Schichtdicke mind. 1,5 mm\n- Schweißnahtprüfung aller Nähte\n- Aushärtungsprotokoll vor Inbetriebnahme\n\nEinheit: m²\nMenge: ______ m²"}],
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════════════════════════════════════════════
+function chooseOption(idx){
+  var step=TREE[currentStep], opt=step.options[idx];
+  if(opt.key&&opt.ans!==undefined&&opt.ans!==null) answers[opt.key]=opt.ans;
+  navStack.push({stepKey:currentStep,answers:JSON.parse(JSON.stringify(answers)),crumb:opt.label});
+  currentStep=opt.next;
   render();
 }
-
-function goBack() {
-  if (navStack.length === 0) return;
-  var prev = navStack.pop();
-  currentStep = prev.stepKey;
-  answers     = prev.answers;
+function goBack(){
+  if(navStack.length===0) return;
+  var prev=navStack.pop();
+  currentStep=prev.stepKey; answers=prev.answers;
   render();
 }
-
-function resetAll() {
-  navStack = []; answers = {}; currentStep = "bauteil";
-  render();
+function resetAll(){navStack=[];answers={};currentStep="start";render();}
+function toggleCheck(i){
+  var box=document.getElementById("cb"+i),lbl=document.getElementById("cl"+i);
+  var on=box.classList.toggle("checked");
+  if(on)lbl.classList.add("checked");else lbl.classList.remove("checked");
 }
-
-function toggleCheck(i) {
-  var box = document.getElementById("cb" + i);
-  var lbl = document.getElementById("cl" + i);
-  var on  = box.classList.toggle("checked");
-  if (on) lbl.classList.add("checked"); else lbl.classList.remove("checked");
+function toggleStlb(){
+  var b=document.getElementById("stlbBody"),t=document.getElementById("stlbToggle");
+  var open=b.style.display!=="none";
+  b.style.display=open?"none":"block";
+  t.textContent=open?"▼ Anzeigen":"▲ Ausblenden";
 }
-
-function toggleStlb() {
-  var body   = document.getElementById("stlbBody");
-  var toggle = document.getElementById("stlbToggle");
-  var isOpen = body.style.display !== "none";
-  body.style.display   = isOpen ? "none" : "block";
-  toggle.textContent   = isOpen ? "▼ Anzeigen" : "▲ Ausblenden";
-  toggle.classList.toggle("open", !isOpen);
+function togglePos(i){
+  var d=document.getElementById("sd"+i),a=document.getElementById("sa"+i);
+  var open=d.classList.contains("open");
+  d.classList.toggle("open",!open); a.classList.toggle("open",!open);
 }
-
-function togglePos(i) {
-  var detail = document.getElementById("stlbDetail" + i);
-  var arrow  = document.getElementById("stlbArrow"  + i);
-  var isOpen = detail.classList.contains("open");
-  detail.classList.toggle("open",  !isOpen);
-  arrow.classList.toggle("open",   !isOpen);
-}
-
-function copyText(i) {
-  var ta  = document.getElementById("stlbText" + i);
-  var btn = document.getElementById("copyBtn"  + i);
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(ta.textContent).then(function() {
-      btn.textContent = "✓ Kopiert!";
-      btn.classList.add("copied");
-      setTimeout(function() { btn.textContent = "📋 Text kopieren"; btn.classList.remove("copied"); }, 2000);
+function copyText(i){
+  var ta=document.getElementById("st"+i),btn=document.getElementById("cb2_"+i);
+  var txt=ta.textContent;
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(txt).then(function(){
+      btn.textContent="✓ Kopiert!";btn.classList.add("copied");
+      setTimeout(function(){btn.textContent="📋 Text kopieren";btn.classList.remove("copied");},2000);
     });
-  } else {
-    var sel = window.getSelection();
-    var range = document.createRange();
-    range.selectNodeContents(ta);
-    sel.removeAllRanges();
-    sel.addRange(range);
-    document.execCommand("copy");
-    sel.removeAllRanges();
-    btn.textContent = "✓ Kopiert!";
-    btn.classList.add("copied");
-    setTimeout(function() { btn.textContent = "📋 Text kopieren"; btn.classList.remove("copied"); }, 2000);
+  }else{
+    var r=document.createRange();r.selectNodeContents(ta);
+    var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+    document.execCommand("copy");s.removeAllRanges();
+    btn.textContent="✓ Kopiert!";btn.classList.add("copied");
+    setTimeout(function(){btn.textContent="📋 Text kopieren";btn.classList.remove("copied");},2000);
   }
 }
 
-// ─── Render ───────────────────────────────────────────────────────────────────
-function setProgress(pct, label) {
-  document.getElementById("progressFill").style.width = pct + "%";
-  document.getElementById("progressLabel").textContent = label;
-  document.getElementById("progressPct").textContent   = pct + " %";
+// ═══════════════════════════════════════════════════════════════════════════════
+// RENDER
+// ═══════════════════════════════════════════════════════════════════════════════
+function setProgress(pct,label){
+  document.getElementById("progressFill").style.width=pct+"%";
+  document.getElementById("progressLabel").textContent=label;
+  document.getElementById("progressPct").textContent=pct+" %";
 }
-
-function renderBreadcrumb() {
-  var out = "";
-  for (var i = 0; i < navStack.length; i++) {
-    out += '<span class="crumb">' + navStack[i].crumb + '</span>';
-    if (i < navStack.length - 1) out += '<span class="crumb-arrow">›</span>';
+function renderBreadcrumb(){
+  var out="";
+  for(var i=0;i<navStack.length;i++){
+    out+='<span class="crumb">'+navStack[i].crumb+'</span>';
+    if(i<navStack.length-1)out+='<span class="crumb-arrow">›</span>';
   }
-  document.getElementById("breadcrumb").innerHTML = out;
+  document.getElementById("breadcrumb").innerHTML=out;
 }
-
-function render() {
+function render(){
   renderBreadcrumb();
-  if (currentStep === "result") { renderResult(); return; }
-  var step = TREE[currentStep];
-  if (!step) return;
-
-  setProgress(step.progress, step.step);
-  var opts = "";
-  for (var i = 0; i < step.options.length; i++) {
-    var o = step.options[i];
-    opts += '<button class="opt-btn" onclick="chooseOption(' + i + ')">' +
-      '<span class="opt-icon">' + o.icon + '</span>' +
-      '<span class="opt-text"><span class="opt-label">' + o.label + '</span>' +
-      (o.desc ? '<span class="opt-desc">' + o.desc + '</span>' : '') +
-      '</span></button>';
-  }
-  var back = navStack.length > 0 ? '<div class="back-row"><button class="back-btn" onclick="goBack()">← Zurück</button></div>' : '';
-
-  document.getElementById("app").innerHTML =
-    '<div class="card">' +
-      '<div class="step-chip"><span class="step-dot"></span>' + step.step + '</div>' +
-      '<div class="question">' + step.question + '</div>' +
-      (step.hint ? '<div class="hint">' + step.hint + '</div>' : '<div style="margin-bottom:16px"></div>') +
-      '<div class="options">' + opts + '</div>' + back +
-    '</div>';
-}
-
-function renderResult() {
-  setProgress(100, "Ergebnis");
-
-  var b  = answers.bauteil  || "";
-  var w  = answers.wasser   || "";
-  var tg = answers.nutzung  || "";
-  var sk = answers.sockel   || "";
-  var dg = answers.dg       || "";
-
-  var key = "";
-  if      (b === "wand" || b === "sohle") key = b + "|" + w;
-  else if (b === "tg" && tg !== "fahr")   key = "tg|"            + tg;
-  else if (b === "tg" && tg === "fahr") {
-    var sys18 = answers.system18532 || "";
-    var direkt = answers.direkt || "";
-    if (direkt === "ja")       key = "tg|fahr|direkt";
-    else if (sys18)            key = "tg|fahr|" + sys18;
-    else                       key = "tg|fahr|18532-6"; // fallback
-  }
-  else if (b === "sockel")                key = "sockel|"        + sk;
-  else if (b === "durchdringung")         key = "durchdringung|" + dg;
-
-  var RESULTS = {
-    "wand|W1.1-E":           {klasse:"W1.1-E",        badge:"badge-low",  title:"Wand erdberührt · Bodenfeuchte",              subtitle:"Kein Druckwasser. Geringe Anforderung.",                                        systeme:[{prim:true,name:"PMBC – Polymer-Bitumen-Dickbeschichtung",note:"mind. 4 mm, 2 Lagen kreuzweise · DIN 18533-2 §4.2"},{prim:false,name:"MDS – Mineralische Dichtungsschlämme",note:"Bei mineralischen Untergründen"}],                                       checks:["Untergrund sauber, trocken, tragfähig","Voranstrich lt. Herstellervorgabe","Mind. 2 Lagen kreuzweise aufbringen","Schichtdicke gesamt ≥ 4 mm","Kein Auftrag bei Frost oder Regen","Noppenbahn als Schutzschicht"],                                warnungen:[],norm:"DIN 18533-2:2017, W1.1-E"},
-    "wand|W1.2-E":           {klasse:"W1.2-E",        badge:"badge-low",  title:"Wand erdberührt · Sickerwasser",               subtitle:"Zeitweise Wasseransammlung, kein Dauerdruck.",                                  systeme:[{prim:true,name:"PMBC + Vlies-/Gewebeeinlage",note:"mind. 4 mm, Gewebe an Ecken/Kehlen zwingend"},{prim:false,name:"MDS – Mineralische Dichtungsschlämme",note:"Nur bei trockenem Untergrund"}],                                                 checks:["Hohlkehle Wand/Sohle: Ø 4–6 cm, kein rechter Winkel!","Gewebeeinlage an allen Kehlen und Ecken","Drainageschicht (Noppenbahn + Filtervlies)","Schichtdicke gesamt ≥ 4 mm","Keine Fehlstellen – Prüfung nach Trocknung"],         warnungen:["Drainage zwingend – sonst Rückstau!"],                        norm:"DIN 18533-2:2017, W1.2-E"},
-    "wand|W2.1-E":           {klasse:"W2.1-E",        badge:"badge-mid",  title:"Wand erdberührt · Drückendes Wasser ≤ 3 m",    subtitle:"Grundwasserdruck vorhanden. Erhöhte Ausführungsanforderungen.",                 systeme:[{prim:true,name:"PMBC gewebeverstärkt (alle Lagen)",note:"Gewebeverstärkung Pflicht in allen Lagen"},{prim:false,name:"Kunststoff- / Bitumenbahnen",note:"Vollflächig verklebt · DIN 18533-2 §5"},{prim:false,name:"WU-Beton (Weiße Wanne)",note:"Alternative nach WU-Richtlinie DBV"}],        checks:["Hohlkehle Wand/Sohle (Ø mind. 4 cm)","Gewebeverstärkung in ALLEN Lagen","Arbeitsfugen: Fugenband oder Quellprofil","Druckwasserfeste Verbauung während Ausführung","Schichtdicken protokollieren – Dokumentationspflicht!"],  warnungen:["Druckwasserlast – Protokoll Pflicht!","Baugrundgutachten prüfen."],norm:"DIN 18533-1:2017 §5 · DIN 18533-2 §4, W2.1-E"},
-    "wand|W2.2-E":           {klasse:"W2.2-E",        badge:"badge-high", title:"Wand erdberührt · Drückendes Wasser > 3 m",    subtitle:"Hoher Grundwasserdruck. Fachplaner erforderlich.",                              systeme:[{prim:true,name:"Abdichtungsbahnen – wannenartig, vollflächig",note:"Bitumen-Schweißbahnen oder Kunststoffbahnen"},{prim:false,name:"WU-Beton (Weiße Wanne)",note:"Gesamtkonzept mit Tragwerksplaner"}],                                             checks:["Fachplaner (LP 5) vor Ausführungsbeginn einbinden!","Wannenanschluss lückenlos","Auftrieb statisch nachweisen","QSP erstellen","Prüfung nach jeder Lage"],                                                                         warnungen:["HOHES SCHADENSRISIKO – nur mit geprüftem Abdichtungsplan!"],  norm:"DIN 18533-1:2017 §5 · DIN 18533-2 §4, W2.2-E"},
-    "sohle|W1.1-E":          {klasse:"W1.1-E",        badge:"badge-low",  title:"Bodenplatte · Bodenfeuchte",                   subtitle:"Kein Druckwasser. Einfachste Anforderung.",                                     systeme:[{prim:true,name:"PMBC auf Sauberkeitsschicht",note:"2-lagig, Aufkantung an Wand mind. 15 cm"},{prim:false,name:"PE-Folie mind. 0,5 mm",note:"Nähte mind. 20 cm überlappen und verschweißen"}],                                        checks:["Sauberkeitsschicht mind. 5 cm","Abdichtung vollständig geschlossen","Aufkantung an Wand mind. 15 cm","Keine Perforierung durch Bewehrung"],                                                                                          warnungen:[],                                                              norm:"DIN 18533-2:2017, Sohle W1.1-E"},
-    "sohle|W1.2-E":          {klasse:"W1.2-E",        badge:"badge-low",  title:"Bodenplatte · Sickerwasser",                   subtitle:"Zeitweise Feuchtebelastung von unten.",                                         systeme:[{prim:true,name:"PMBC 2-lagig mit Vlieseinlage",note:"Schichtdicke mind. 4 mm"},{prim:false,name:"Bitumenbahn 1-lagig (mind. R 500)",note:"Nähte mind. 10 cm überlappen"}],                                                           checks:["Hohlkehle Sohle/Wand Ø 4–6 cm","Nahtüberlappungen mind. 10 cm, Stöße versetzt","Drainage vorsehen","Aufkantung an Wand mind. 15 cm"],                                                                                              warnungen:[],                                                              norm:"DIN 18533-2:2017, Sohle W1.2-E"},
-    "sohle|W2.1-E":          {klasse:"W2.1-E",        badge:"badge-mid",  title:"Bodenplatte · Drückendes Wasser ≤ 3 m",        subtitle:"Grundwasserdruck von unten. Auftrieb prüfen!",                                  systeme:[{prim:true,name:"Bitumen-Schweißbahnen 2-lagig",note:"Vollflächig verklebt, Nähte mind. 10 cm"},{prim:false,name:"WU-Beton (Weiße Wanne)",note:"Nach DBV WU-Richtlinie"}],                                                           checks:["Auftriebsnachweis – Tragwerksplaner einbinden!","Aufkantung durchgehend bis Abdichtungsebene","Dehnfuge / Fugenband an Anschlussbereichen","Schwimmende Aufkantung vermeiden"],                                                       warnungen:["Auftriebsgefahr – Nachweis VOR Ausführung!"],                 norm:"DIN 18533-2:2017, Sohle W2.1-E"},
-    "sohle|W2.2-E":          {klasse:"W2.2-E",        badge:"badge-high", title:"Bodenplatte · Drückendes Wasser > 3 m",        subtitle:"Hoher Wasserdruck. Höchste Anforderungen.",                                     systeme:[{prim:true,name:"Wannensystem Schwarze Wanne (Bahnen + Rücklage)",note:"Vollständig geschlossene Wanne"},{prim:false,name:"WU-Beton (Weiße Wanne)",note:"Nur mit geprüftem WU-Konzept und QSP"}],                                   checks:["Fachplanung LP 5 zwingend vor Beginn","Baugrundgutachten aktuell?","Auftriebssicherung nachgewiesen?","QSP erstellt?"],                                                                                                              warnungen:["FACHPLANER + PRÜFINGENIEUR einschalten!"],                    norm:"DIN 18533-1/2:2017, W2.2-E"},
-    "tg|gruen":              {klasse:"W3-E",           badge:"badge-mid",  title:"TG-Decke · Begrünt / Erdüberdeckt",            subtitle:"Dauernde Feuchtebelastung. FLL-Richtlinie beachten.",                           systeme:[{prim:true,name:"Bitumen-Schweißbahnen 2-lagig (wurzelfest)",note:"FLL-Zulassung Pflicht"},{prim:false,name:"Flüssigkunststoff (PUR/PMMA) + Schutzbahn",note:"Nur Extensivbegrünung"}],                                                 checks:["Wurzelfestigkeit FLL-nachgewiesen?","Gefälle mind. 1,5 %","Schutzmatte über gesamter Fläche","Drainageschicht + Filtervlies","Notüberläufe eingebaut?"],                                                                             warnungen:["Begrünung und Abdichtung abstimmen – Systemgeber!"],          norm:"DIN 18533 · FLL-Richtlinie · DIN SPEC 20000-202"},
-    "tg|fahr":               {klasse:"W3-E",           badge:"badge-high", title:"TG-Decke · Befahrbar (PKW / LKW)",             subtitle:"Mechanische Belastung. OS-System erforderlich.",                                systeme:[{prim:true,name:"Reaktionsharz OS 11a/11b",note:"DIN 28052, PMMA oder PU, zugelassen"},{prim:false,name:"Bitumenbahnen + Gussasphalt",note:"Klassischer TG-Aufbau"}],                                                                checks:["Risse verpressen vor Abdichtung","Dehnfugenprofile druckwasserdicht","Abläufe systemkonform anschließen","Schichtdickennachweis OS-System","Freigabe erst nach Aushärtung"],                                                           warnungen:["OS-System-Zulassung prüfen und dokumentieren!"],              norm:"DIN 28052:2022 · ZTV-ING · DIN 18533"},
-    "tg|geh":                {klasse:"W3-E",           badge:"badge-low",  title:"TG-Decke · Begehbar (Terrasse)",               subtitle:"Geringe Belastung. Gefälle und Sockelhöhe beachten.",                           systeme:[{prim:true,name:"Bitumenbahnen 2-lagig + Schutzbahn",note:"Plattenbelag stelzgelagert"},{prim:false,name:"Flüssigkunststoff nahtlos (PUR/PMMA)",note:"Schutzschicht Pflicht"}],                                                       checks:["Gefälle mind. 1,5 %","Sockelhöhe mind. 15 cm über OK Belag","Geländeranschlüsse abdichten","Belag stelzgelagert und hinterlüftet"],                                                                                                  warnungen:[],                                                              norm:"DIN 18533 · FDR 2023"},
-    "sockel|kurz":           {klasse:"W4-E",           badge:"badge-low",  title:"Sockel · Spritzwasserzone",                    subtitle:"Spritzwasser und Schlagregen. Geringe Beanspruchung.",                          systeme:[{prim:true,name:"PMBC 2-lagig",note:"Mindesthöhe mind. 30 cm über GOK"},{prim:false,name:"MDS + Zementputz",note:"Nur bei trockenem Standort"}],                                                                                     checks:["Mind. 30 cm über GOK","Übergang WD/Dämmung abdichten","Abtropfkante vorsehen","Systemkonform zur Wandabdichtung"],                                                                                                                   warnungen:[],                                                              norm:"DIN 18533-1:2017 §4.4, W4-E"},
-    "sockel|kombi":          {klasse:"W4-E + Wand",    badge:"badge-mid",  title:"Sockel + Erdberührte Wand (Kombination)",      subtitle:"Abdichtung muss durchgehend aus einem System bestehen.",                        systeme:[{prim:true,name:"PMBC durchgehend (Wand + Sockel)",note:"Übergangsloses System, mind. 30 cm ü. GOK"},{prim:false,name:"Bitumenbahn ab Sohle bis Sockelabschluss",note:"Systemkonformer Übergang"}],                                  checks:["Kein Systemwechsel im Übergang","Gleiche Materialfamilie Wand/Sockel","Abtropfkante planen","30 cm über GOK einhalten"],                                                                                                             warnungen:["Übergang Sockel/Wand = kritische Fehlstellenzone!"],          norm:"DIN 18533-1/2:2017, Kombi"},
-    "durchdringung|rohr":    {klasse:"Sonderdetail",   badge:"badge-mid",  title:"Durchdringung · Rohr / Leerrohr",              subtitle:"Jede Durchdringung ist eine potenzielle Schwachstelle.",                        systeme:[{prim:true,name:"Flanschanschluss (systemzugelassen)",note:"Gleicher Systemgeber wie Fläche"},{prim:false,name:"Manschette mit Klemmring",note:"Nur bei W1-Klassen"}],                                                               checks:["Flansch systemkonform?","Mindestabstand Rohr/Rohr mind. 15 cm","Bewegungsausgleich beachten","Optische Prüfung nach Einbau"],                                                                                                        warnungen:["Durchdringungen = häufigste Leckagequelle – Fachbetrieb!"],  norm:"DIN 18533-1:2017 §6"},
-    "durchdringung|tuer":    {klasse:"Sonderdetail",   badge:"badge-mid",  title:"Anschluss Tür / Fenster an Abdichtung",        subtitle:"Häufigste Leckage-Stelle im Keller!",                                          systeme:[{prim:true,name:"Anschlussband + PMBC-Anbindung",note:"Hersteller-Systemprodukt, mind. 10 cm Überdeckung"},{prim:false,name:"Manschettenband in PMBC",note:"Mind. 10 cm Überlappung, Eckformteile"}],                                 checks:["Rahmenunterkante mind. 15 cm über Abdichtungsoberkante","Keine Unterschneidung am Blendrahmen","Türschwelle druckwasserfest?","Eckausbildung mit Formteilen"],                                                                        warnungen:["Türanschluss = häufigste Leckage – besondere Sorgfalt!"],    norm:"DIN 18533-1:2017 §6.5"},
-    "durchdringung|anschluss":{klasse:"Sonderdetail",  badge:"badge-mid",  title:"Wand-Boden-Anschluss / Hohlkehle",             subtitle:"Ohne Hohlkehle keine dauerhaft dichte Abdichtung.",                            systeme:[{prim:true,name:"Hohlkehle + PMBC durchgehend",note:"Innenradius mind. 4 cm, Gewebeeinlage Pflicht"},{prim:false,name:"Fugenband + Bahn durchgehend",note:"Kehle vorformen, gleiche Materialfamilie"}],                                checks:["Hohlkehle Ø 4–6 cm – KEIN rechter Winkel!","Gewebeeinlage zuerst einbetten","PMBC: erst Kehle, dann Fläche","Fugenriss? → Fugenband/Quellprofil"],                                                                                  warnungen:["Ohne Hohlkehle = Fehlstelle vorprogrammiert!"],              norm:"DIN 18533-1:2017 §6.3"},
-  
-    "tg|fahr|direkt":  {klasse:"DIN 18532-6 / OS 11b", badge:"badge-high", title:"TG-Decke · Direkt befahren – Flüssigkunststoff",
-      subtitle:"Direkt befahrene Abdichtung ohne Belag. Nur DIN 18532-6 (FLK/OS) zulässig.",
-      systeme:[
-        {prim:true, name:"FLK OS 11b – direkt befahrbar, DIN 18532-6",     note:"PMMA oder PU, OS 11b, vollständige Systemzulassung, Nutzungsklasse N2-V/N3-V"},
-        {prim:false,name:"FLK OS 11a – leicht befahrbar",                   note:"Nur für leichte Nutzung N1-V (Fußgänger + gelegentlich PKW)"},
-      ],
-      checks:["Nutzungsklasse klären: N1-V / N2-V / N3-V (PKW / LKW / Schwerlast)","Rissklasse R1-V: Untergrund auf Risse prüfen, ggf. verpressen","Systemzulassung OS 11b vorliegend?","Schichtdickenprotokoll (Nassfilm messen je Lage)","Dehnfugenprofile druckwasserdicht ausführen","Aushärtungsprotokoll und Freigabe durch Hersteller"],
-      warnungen:["Direkte Befahrung – OS 11b Pflicht, kein Bahnen- oder Dünnschichtsystem!","Bauaufsichtliche Zulassung des Systemherstellers prüfen."],
-      norm:"DIN 18532-6:2025-06 · OS 11b · DIN 28052"},
-    "tg|fahr|18532-4": {klasse:"DIN 18532-4", badge:"badge-mid", title:"TG-Decke befahren · Kunststoff-/Elastomerbahn",
-      subtitle:"1-lagige Kunststoff- oder Elastomerbahn nach DIN 18532-4:2025-06.",
-      systeme:[
-        {prim:true, name:"Kunststoffbahn 1-lagig (ECB / PVC-P / FPO / EPDM)", note:"Bauweisen 1a, 2a, 2b – Nutzungsklassen N1-V bis N3-V, Rissklasse R1-V"},
-        {prim:false,name:"PIB oder TPE-Bahn",                                  note:"Alternative Materialen nach DIN 18532-4, Systemherstellerfreigabe"},
-      ],
-      checks:["Nutzungsklasse N1-V / N2-V / N3-V festlegen","Untergrundprüfung: Rautiefenausgleich nach DIN 18532-4:2025-06","Unterlaufsicherheit sicherstellen (Neuregelung 2025)","Überlappungsnähte: Schweißnahtprüfung (Heißluft oder Quell)","Dehnfugenprofile systemkonform","Ablaufanschlüsse mit Systemflansch","Wärmedämmung: Bauweise 2a oder 2b wählen"],
-      warnungen:["DIN 18532-4:2025-06 gilt ab sofort – Unterlaufsicherheit prüfen (neue Anforderung)!"],
-      norm:"DIN 18532-4:2025-06 (abwärtskompatibel zu 2017-07)"},
-    "tg|fahr|18532-5": {klasse:"DIN 18532-5", badge:"badge-mid", title:"TG-Decke befahren · Bitumen + Kunststoffbahn (Verbund)",
-      subtitle:"Verbundsystem: Polymerbitumenbahn (unten) + Kunststoff-/Elastomerbahn (oben).",
-      systeme:[
-        {prim:true, name:"Verbundsystem PYB + Kunststoffbahn (DIN 18532-5)",  note:"Untere Lage: Polymerbitumenbahn – Obere Lage: Kunststoff-/Elastomerbahn"},
-        {prim:false,name:"Alternativ: reines Kunststoffbahnsystem (DIN 18532-4)", note:"Wenn Bitumenunterlage nicht gewünscht"},
-      ],
-      checks:["Nutzungsklassen N1-V bis N3-V, Rissklasse R1-V","Untergrundbehandlung nach DIN 18532-5:2025-06 (präzisiert)","Rautiefenausgleich vor Bahnenlage herstellen","Polymerbitumenbahn vollflächig verkleben / verschweißen","Kunststoffbahn auf Bitumenlage: Systemherstellerfreigabe Pflicht","Überlappungsstöße beider Lagen versetzt anordnen (mind. 30 cm)","Anschluss Dehnfugenprofile systemkonform"],
-      warnungen:["DIN 18532-5:2025-06 – Untergrundbehandlung und Rautiefenausgleich neu präzisiert!"],
-      norm:"DIN 18532-5:2025-06 (abwärtskompatibel zu 2017-07 / A1:2018-09)"},
-    "tg|fahr|18532-6": {klasse:"DIN 18532-6", badge:"badge-mid", title:"TG-Decke befahren · Flüssigkunststoff FLK / OS-System",
-      subtitle:"Nahtlose Abdichtung mit flüssig verarbeiteten Stoffen. Ideal bei komplexer Geometrie.",
-      systeme:[
-        {prim:true, name:"FLK OS 11b – befahrbar (PKW/LKW)",                note:"PMMA oder PU, DIN 18532-6:2025-06, Nutzungsklassen N1-V bis N3-V"},
-        {prim:false,name:"FLK OS 11a – leicht befahrbar",                    note:"Für N1-V, geringere Schichtdicke, gelegentliche Befahrung"},
-        {prim:false,name:"FLK OS 10 – Fußgänger + leicht",                   note:"Nur N1-V, präzisiert in 2025-06"},
-      ],
-      checks:["Nutzungsklasse N1-V / N2-V / N3-V festlegen","Systemvariante wählen: OS 10 / OS 11a / OS 11b","Rissklasse R1-V – Untergrund prüfen, Risse verpressen","Rautiefenausgleich nach DIN 18532-6:2025-06 herstellen","Schichtdicken je Lage protokollieren (Nassfilm)","Dehnfugen und Abläufe nahtlos integrieren","Aushärtungsprotokoll und Freigabe Hersteller","OS 8 ist gestrichen (Stand 2025) – nicht mehr verwenden!"],
-      warnungen:["DIN 18532-6:2025-06: OS 8 gestrichen – bestehende Ausschreibungen prüfen!","Komplexe Geometrien: Systemherstellerfreigabe für alle Anschlussdetails einholen."],
-      norm:"DIN 18532-6:2025-06 (abwärtskompatibel zu 2017-07)"},
-  };
-
-  var r = RESULTS[key];
-  if (!r) {
-    document.getElementById("app").innerHTML =
-      '<div class="card"><p style="color:var(--muted)">Kombination nicht erkannt (Key: ' + key + ').</p>' +
-      '<div class="back-row"><button class="back-btn" onclick="goBack()">← Zurück</button></div></div>';
+  if(currentStep==="result"){renderResult();return;}
+  var step=TREE[currentStep];
+  if(!step){
+    document.getElementById("app").innerHTML='<div class="card"><p style="color:var(--muted)">Unbekannter Schritt: '+currentStep+'</p><div class="back-row"><button class="back-btn" onclick="resetAll()">Neu starten</button></div></div>';
     return;
   }
-
-  // Warns
-  var warns = "";
-  for (var i = 0; i < r.warnungen.length; i++) {
-    warns += '<div class="warn-box"><span>⚠️</span><span>' + r.warnungen[i] + '</span></div>';
+  setProgress(step.progress,step.step);
+  var opts="";
+  for(var i=0;i<step.options.length;i++){
+    var o=step.options[i];
+    var normBadge=o.norm?'<span class="opt-norm '+o.norm+'">'+o.normtxt+'</span>':"";
+    opts+='<button class="opt-btn" onclick="chooseOption('+i+')">'+
+      '<span class="opt-icon">'+o.icon+'</span>'+
+      '<span class="opt-text"><span class="opt-label">'+o.label+'</span>'+
+      (o.desc?'<span class="opt-desc">'+o.desc+'</span>':'')+
+      normBadge+'</span></button>';
   }
-  if (warns) warns = '<div class="warn-list">' + warns + '</div>';
-
-  // Systems
-  var sys = "";
-  for (var i = 0; i < r.systeme.length; i++) {
-    var s = r.systeme[i];
-    sys += '<div class="sys-item ' + (s.prim ? "prim" : "alt") + '">' +
-      '<span class="sys-tag">' + (s.prim ? "Empfohlen" : "Alternativ") + '</span>' +
-      '<div><div class="sys-name">' + s.name + '</div><div class="sys-note">' + s.note + '</div></div></div>';
-  }
-
-  // Checks
-  var chk = "";
-  for (var i = 0; i < r.checks.length; i++) {
-    chk += '<div class="check-item">' +
-      '<div class="check-box" id="cb' + i + '" onclick="toggleCheck(' + i + ')"></div>' +
-      '<span class="check-label" id="cl' + i + '" onclick="toggleCheck(' + i + ')">' + r.checks[i] + '</span></div>';
-  }
-
-  // StLB positions
-  var stlbPositionen = STLB[key] || [];
-  var stlbHtml = "";
-  if (stlbPositionen.length > 0) {
-    var posHtml = "";
-    for (var i = 0; i < stlbPositionen.length; i++) {
-      var p = stlbPositionen[i];
-      posHtml +=
-        '<div class="stlb-pos">' +
-          '<div class="stlb-pos-head" onclick="togglePos(' + i + ')">' +
-            '<span class="stlb-nr">' + p.nr + '</span>' +
-            '<span class="stlb-kurz">' + p.kurz + '</span>' +
-            '<span class="stlb-arrow" id="stlbArrow' + i + '">›</span>' +
-          '</div>' +
-          '<div class="stlb-detail" id="stlbDetail' + i + '">' +
-            '<pre class="stlb-langtext" id="stlbText' + i + '">' + p.lang + '</pre>' +
-            '<button class="copy-btn" id="copyBtn' + i + '" onclick="copyText(' + i + ')">📋 Text kopieren</button>' +
-          '</div>' +
-        '</div>';
-    }
-
-    stlbHtml =
-      '<div class="stlb-block">' +
-        '<div class="stlb-head" onclick="toggleStlb()">' +
-          '<div class="stlb-head-left">' +
-            '<span>📄 Ausschreibungstext</span>' +
-            '<span class="stlb-badge">StLB-Bau orientiert</span>' +
-          '</div>' +
-          '<span class="stlb-toggle" id="stlbToggle">▼ Anzeigen</span>' +
-        '</div>' +
-        '<div class="stlb-body" id="stlbBody" style="display:none">' +
-          posHtml +
-        '</div>' +
-      '</div>';
-  }
-
-  document.getElementById("app").innerHTML =
-    '<div class="result-wrap">' +
-      '<div class="result-hero">' +
-        '<div class="badge ' + r.badge + '">' + r.klasse + '</div>' +
-        '<div class="result-title">' + r.title + '</div>' +
-        '<div class="result-subtitle">' + r.subtitle + '</div>' +
-      '</div>' +
-      warns +
-      '<div class="section-block">' +
-        '<div class="section-head">Abdichtungssystem</div>' +
-        '<div class="section-body">' + sys + '</div>' +
-      '</div>' +
-      '<div class="section-block">' +
-        '<div class="section-head">Ausführungs-Checkliste (Bauleiter)</div>' +
-        '<div class="section-body check-list">' + chk + '</div>' +
-        '<div class="norm-row"><span>📖</span>' + r.norm + '</div>' +
-      '</div>' +
-      stlbHtml +
-      '<div class="result-footer">' +
-        '<button class="back-btn" onclick="goBack()">← Zurück</button>' +
-        '<button class="action-btn primary-btn" onclick="resetAll()">↩ Neue Abfrage</button>' +
-      '</div>' +
+  var back=navStack.length>0?'<div class="back-row"><button class="back-btn" onclick="goBack()">← Zurück</button></div>':"";
+  document.getElementById("app").innerHTML=
+    '<div class="card">'+
+      '<div class="step-chip"><span class="step-dot"></span>'+step.step+'</div>'+
+      '<div class="question">'+step.question+'</div>'+
+      (step.hint?'<div class="hint">'+step.hint+'</div>':'<div style="margin-bottom:16px"></div>')+
+      '<div class="options">'+opts+'</div>'+back+
     '</div>';
 }
 
+function renderResult(){
+  setProgress(100,"Ergebnis");
+  var key=buildKey();
+  var r=RESULTS[key];
+  if(!r){
+    document.getElementById("app").innerHTML=
+      '<div class="card"><p style="color:var(--muted)">Kombination nicht erkannt.<br><small>Key: '+key+'</small></p>'+
+      '<div class="back-row"><button class="back-btn" onclick="goBack()">← Zurück</button>&nbsp;<button class="back-btn" onclick="resetAll()">Neu starten</button></div></div>';
+    return;
+  }
+  var warns="";
+  for(var i=0;i<r.warnungen.length;i++)
+    warns+='<div class="warn-box"><span>⚠️</span><span>'+r.warnungen[i]+'</span></div>';
+  if(warns)warns='<div class="warn-list">'+warns+'</div>';
+
+  var sys="";
+  for(var i=0;i<r.systeme.length;i++){
+    var s=r.systeme[i];
+    sys+='<div class="sys-item '+(s.prim?"prim":"alt")+'">'+
+      '<span class="sys-tag">'+(s.prim?"Empfohlen":"Alternativ")+'</span>'+
+      '<div><div class="sys-name">'+s.name+'</div><div class="sys-note">'+s.note+'</div></div></div>';
+  }
+  var chk="";
+  for(var i=0;i<r.checks.length;i++)
+    chk+='<div class="check-item">'+
+      '<div class="check-box" id="cb'+i+'" onclick="toggleCheck('+i+')"></div>'+
+      '<span class="check-label" id="cl'+i+'" onclick="toggleCheck('+i+')">'+r.checks[i]+'</span></div>';
+
+  var stlbPos=STLB[key]||[];
+  var stlbHtml="";
+  if(stlbPos.length>0){
+    var posHtml="";
+    for(var i=0;i<stlbPos.length;i++){
+      var p=stlbPos[i];
+      posHtml+='<div class="stlb-pos">'+
+        '<div class="stlb-pos-head" onclick="togglePos('+i+')">'+
+          '<span class="stlb-nr">'+p.nr+'</span>'+
+          '<span class="stlb-kurz">'+p.kurz+'</span>'+
+          '<span class="stlb-arrow" id="sa'+i+'">›</span>'+
+        '</div>'+
+        '<div class="stlb-detail" id="sd'+i+'">'+
+          '<pre class="stlb-langtext" id="st'+i+'">'+p.lang+'</pre>'+
+          '<button class="copy-btn" id="cb2_'+i+'" onclick="copyText('+i+')">📋 Text kopieren</button>'+
+        '</div></div>';
+    }
+    stlbHtml='<div class="stlb-block">'+
+      '<div class="stlb-head" onclick="toggleStlb()">'+
+        '<div style="display:flex;align-items:center;gap:8px"><span>📄 Ausschreibungstext</span>'+
+        '<span class="stlb-badge">StLB-Bau orientiert</span></div>'+
+        '<span class="stlb-toggle" id="stlbToggle">▼ Anzeigen</span>'+
+      '</div>'+
+      '<div id="stlbBody" style="display:none">'+posHtml+'</div></div>';
+  }
+
+  document.getElementById("app").innerHTML=
+    '<div class="result-wrap">'+
+      '<div class="result-hero">'+
+        '<div class="badge '+r.badge+'">'+r.klasse+'</div>'+
+        '<div class="result-title">'+r.title+'</div>'+
+        '<div class="result-subtitle">'+r.subtitle+'</div>'+
+      '</div>'+
+      warns+
+      '<div class="section-block"><div class="section-head">Abdichtungssystem</div>'+
+        '<div class="section-body">'+sys+'</div></div>'+
+      '<div class="section-block"><div class="section-head">Ausführungs-Checkliste (Bauleiter)</div>'+
+        '<div class="section-body check-list">'+chk+'</div>'+
+        '<div class="norm-row"><span>📖</span>'+r.norm+'</div></div>'+
+      stlbHtml+
+      '<div class="result-footer">'+
+        '<button class="back-btn" onclick="goBack()">← Zurück</button>'+
+        '<button class="action-btn primary-btn" onclick="resetAll()">↩ Neue Abfrage</button>'+
+      '</div>'+
+    '</div>';
+}
 render();
 </script>
 </body>
